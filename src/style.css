@@ -1,0 +1,356 @@
+/* ================================
+   GLOBAL
+================================ */
+
+body {
+  font-family: 'Nunito', sans-serif;
+  color: #666;
+  overflow-x: hidden;
+}
+
+section {
+  position: relative;
+}
+
+/* ================================
+   TOP BAR (Premium Look)
+================================ */
+
+.topbar {
+  background: #ed5ab0;
+  color: #fff;
+  font-size: 14px;
+  padding: 10px 0;
+  transition: all 0.3s ease;
+}
+
+.topbar-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.link {
+  font-family: 'Lora', serif;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 16px;
+  color: #fff !important;
+  transition: 0.3s ease;
+}
+
+.link:hover {
+  opacity: 0.8;
+}
+
+/* ================================
+   NAVBAR (Like Umang)
+================================ */
+
+.main-navbar {
+  background: #fff;
+  padding: 20px 0;
+  transition: all 0.4s ease;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.main-navbar.scrolled {
+  padding: 12px 0;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+}
+
+.logo {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.logo-blue { color: #3f51f7; }
+.logo-pink { color: #f2529d; }
+
+.navbar-nav .nav-link {
+  margin-left: 25px;
+  font-size: 14px;
+  padding: 30px 12px;
+  font-weight: 600;
+  font-family: Poppins;
+  transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #f2529d;
+}
+
+.active-link {
+  color: #f2529d !important;
+}
+
+
+.nav-item-custom:hover .custom-dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(10px);
+}
+
+.custom-dropdown a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 30px;
+  font-size: 17px;
+  font-weight: 500;
+  color: #222;
+  transition: 0.3s ease;
+}
+
+.custom-dropdown a span {
+  font-size: 20px;
+  transition: 0.3s ease;
+}
+
+.custom-dropdown a:hover {
+  color: #3f51f7;
+  background: #f5f7ff;
+}
+
+.custom-dropdown a:hover span {
+  transform: translateX(5px);
+}
+
+/* Chevron animation */
+.nav-item-custom:hover .fa-chevron-down {
+  transform: rotate(180deg);
+  transition: 0.3s ease;
+}
+
+.custom-dropdown {
+    position: static;
+    transform: none;
+    opacity: 1;
+    visibility: visible;
+    border: 2px solid #3f51f7;
+    margin-top: 10px;
+    box-shadow: none;
+  }
+/* ================================
+   HERO SECTION (Premium Feel)
+================================ */
+
+
+
+.hero-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.hero-left {
+  max-width: 550px;
+  animation: fadeUp 1s ease forwards;
+}
+
+.hero-left h2 {
+  font-family: Abhaya Libre, serif;
+  font-size: 70px;
+  line-height: 70px;
+  font-weight: 700;
+  color: #3f51f7;
+  margin-bottom: 25px;
+}
+
+
+.dark-text {
+  font-size: 18px;
+  margin-bottom: 40px;
+  font-weight: 400;
+  color: #000 !important;
+  line-height: 30px;
+  font-family: Poppins;
+}
+
+/* ================================
+   BUTTONS (Smooth Like Demo)
+================================ */
+
+
+.button-join {
+  padding: 18px 60px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  background-color: #f2529d;
+  border-radius: 40px;
+  text-decoration: none;
+  transition: all 0.4s ease;
+  display: inline-block;
+}
+
+.button-join:hover {
+  background: #3f51f7;
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.1);
+  color: #fff;
+}
+
+
+/* ================================
+   ANIMATION
+================================ */
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ================================
+   RESPONSIVE (Very Important)
+================================ */
+
+@media (max-width: 1200px) {
+  .hero-left h2 {
+    font-size: 55px;
+    line-height: 60px;
+  }
+}
+
+@media (max-width: 992px) {
+
+  .hero-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-left {
+    max-width: 100%;
+  }
+
+  .hero-left h2 {
+    font-size: 45px;
+    line-height: 50px;
+  }
+
+  .hero-left p {
+    font-size: 16px;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .slick-prev,
+  .slick-next {
+    display: none !important;
+  }
+}
+
+@media (max-width: 576px) {
+
+  .hero-left h2 {
+    font-size: 34px;
+    line-height: 40px;
+  }
+
+  .button-join {
+    padding: 14px 40px;
+  }
+
+  .topbar-inner {
+    flex-direction: column;
+    gap: 5px;
+  }
+}
+
+/* ================================
+   HERO SECTION FULL CLONE
+================================ */
+
+.hero-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-slide {
+  height: 100vh;
+  display: flex !important;
+  align-items: center;
+  background: #f9f9f9;
+  position: relative;
+}
+
+.hero-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.hero-right img {
+  max-width: 550px;
+  animation: floatImage 4s ease-in-out infinite;
+}
+
+.hero-left {
+  z-index: 2;
+  animation: fadeUp 1.2s ease forwards;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ================================
+   SMOOTH SLIDER
+================================ */
+
+.hero-slider .slick-slide {
+  transition: opacity 1s ease-in-out;
+}
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 992px) {
+
+  .hero-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-right img {
+    max-width: 350px;
+    margin-top: 30px;
+  }
+
+  .shape {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+
+  .hero-left h2 {
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  .hero-right img {
+    max-width: 280px;
+  }
+}
