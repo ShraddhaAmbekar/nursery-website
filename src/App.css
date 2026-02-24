@@ -269,9 +269,10 @@
   font-weight: 600;
   padding: 15px 15px;
   font-family: "Poppins", sans-serif;
-  transition: var(--transition);
+  
   position: relative;
   color: #2b2d2e;
+
 }
 
 /* Hover color */
