@@ -5,7 +5,40 @@ import frame from "../../assets/image-frame2.png";
 
 
 const StaffSection = () => {
-
+const settings = {
+    dots: true,
+    infinite: false,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    initialSlide: 0,
+     responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  };
   return (
     <>
       <section className="section2 mt-5">
@@ -19,34 +52,34 @@ const StaffSection = () => {
 
             <div>
               <section className="staff-section">
-                <div className="row">
-                  <div className="col">
+        <Slider {...settings} className="staff-slider">
+                  <div className=" col-lg-3 col-md-6 col-sm-12">
                     <div className="staff-card">
                       <img src="https://umang-react.vercel.app/assets/pic2-BtQTdJ8y.jpg" alt="" />
                     </div>
                   </div>
 
-                  <div className="col">
-                    <div className="staff-card">
-                      <img src="https://umang-react.vercel.app/assets/pic2-BtQTdJ8y.jpg" alt="" />
-
-                    </div>
-                  </div>
-
-                  <div className="col">
+                  <div className=" col-lg-3 col-md-6 col-sm-12">
                     <div className="staff-card">
                       <img src="https://umang-react.vercel.app/assets/pic2-BtQTdJ8y.jpg" alt="" />
 
                     </div>
                   </div>
 
-                  <div className="col">
+                  <div className=" col-lg-3 col-md-6 col-sm-12">
                     <div className="staff-card">
                       <img src="https://umang-react.vercel.app/assets/pic2-BtQTdJ8y.jpg" alt="" />
 
                     </div>
                   </div>
-                </div>
+
+                  <div className=" col-lg-3 col-md-6 col-sm-12">
+                    <div className="staff-card">
+                      <img src="https://umang-react.vercel.app/assets/pic2-BtQTdJ8y.jpg" alt="" />
+
+                    </div>
+                  </div>
+             </Slider>
               </section>
             </div>
           </div>

@@ -1,13 +1,15 @@
-import React from 'react'
+import React from 'react' 
+import {divider} from '../../assets/line-divider.png'
+import bg1 from '../../assets/bg1.jpg'
 
 const Section3 = () => {
   return (
     <>
    
-    <div className='section3' style={{backgroundImage: "url('/src/assets/bg1.jpg')", backgroundSize: "cover", backgroundPosition: "center center", backgroundAttachment: "fixed"}}>
+    <div className='section3' style={{backgroundImage: `url(${bg1})`, backgroundSize: "cover", backgroundPosition: "center center", backgroundAttachment: "fixed"}}>
    
        <div className="section-divider" style={{position:"relative", zIndex:2}}>
-  <img src="/src/assets/line-divider.png" alt="divider" />
+  <img src={divider} alt="divider" />
 </div>
 
 
@@ -26,7 +28,7 @@ const Section3 = () => {
 </div>
 
  <div className="section-divider" style={{position:"relative", zIndex:2}}>
-  <img src="/src/assets/line-divider2.png" alt="divider" />
+  <img src={divider} alt="divider" />
 </div>
 
 </div>

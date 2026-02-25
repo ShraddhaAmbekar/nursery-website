@@ -1,7 +1,43 @@
 import React from 'react'
 
 import { Container } from "react-bootstrap";
+import Slider from 'react-slick';
 const Blog = () => {
+const settings = {
+    dots: true,
+    infinite: false,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    initialSlide: 0,
+     responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  };
+
   return (
     <div>
       <section className="section2 mt-5">
@@ -14,7 +50,7 @@ const Blog = () => {
 
             <div>
               <section className="blog-section">
-                <div className="row">
+          <Slider {...settings} className="blog-slider">
 
                   <div className="col-lg-4 col-md-6 col-sm-12">
                     <div className="post-card p-4">
@@ -47,7 +83,7 @@ const Blog = () => {
                     <a href="" className='btn-link'>Read more</a>
                   </div>
 
-                </div>
+                </Slider>
               </section>
             </div>
           </div>

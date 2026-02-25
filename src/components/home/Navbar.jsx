@@ -1,5 +1,6 @@
 import { Navbar, Nav, Container } from "react-bootstrap";
 import { useState, useEffect } from "react";
+import { NavLink } from "react-router-dom";
 
 const MainNavbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -24,13 +25,13 @@ const MainNavbar = () => {
         <Navbar.Collapse>
           <Nav className="ms-auto align-items-lg-center">
 
-            <Nav.Link>Home</Nav.Link>
+            <Nav.Link as={NavLink} to="/" end>Home</Nav.Link>
 
-            <Nav.Link>About</Nav.Link>
+            <Nav.Link as={NavLink} to="/about">About</Nav.Link>
 
             {/* Programs Dropdown */}
             <div className="nav-item-dropdown">
-              <Nav.Link className="dropdown-title">
+              <Nav.Link  as={NavLink} to="/programs" className="dropdown-title">
                 Programs <i className="fa fa-chevron-down ms-1"></i>
               </Nav.Link>
 
@@ -42,7 +43,7 @@ const MainNavbar = () => {
               </ul>
             </div>
 
-            <Nav.Link>Contact</Nav.Link>
+            <Nav.Link as={NavLink} to="/contact">Contact</Nav.Link>
 
             
 

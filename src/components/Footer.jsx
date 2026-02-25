@@ -5,7 +5,9 @@ const Footer = () => {
     <footer className="footer-section">
 
       {/* Top Wave */}
-      <div className="footer-wave" />
+    <div className="section-divider" style={{position:"relative", zIndex:2}}>
+  <img src="/src/assets/line-divider.png" alt="divider" />
+</div>
 
       <div className="footer-container">
 
@@ -85,11 +87,11 @@ const Footer = () => {
 
       </div>
 
-      {/* Floating Left Buttons */}
+      {/* {/* Floating Left Buttons
       <div className="floating-buttons">
         <div className="float-btn">🎧</div>
-        <div className="float-btn">🛒</div>
-      </div>
+        <div className="float-btn">🛒</div> 
+      </div> */}
 
       <div className="copyright">
         Copyright © 2025 Umang Academy. All right reserved
