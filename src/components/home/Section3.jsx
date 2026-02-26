@@ -1,5 +1,6 @@
 import React from 'react' 
-import {divider} from '../../assets/line-divider.png'
+import divider1 from '../../assets/line-divider.png'
+import divider2 from '../../assets/line-divider2.png'
 import bg1 from '../../assets/bg1.jpg'
 
 const Section3 = () => {
@@ -9,11 +10,11 @@ const Section3 = () => {
     <div className='section3' style={{backgroundImage: `url(${bg1})`, backgroundSize: "cover", backgroundPosition: "center center", backgroundAttachment: "fixed"}}>
    
        <div className="section-divider" style={{position:"relative", zIndex:2}}>
-  <img src={divider} alt="divider" />
+  <img src={divider1} alt="divider" />
 </div>
 
 
-      <div className="container py-5">
+      <div className="container py-md-5 py-sm-1">
   <div className="row py-5">
     <div className="col-lg-6 col-md-12 col-sm-12 col-12">
       <div className="section-head">
@@ -28,7 +29,7 @@ const Section3 = () => {
 </div>
 
  <div className="section-divider" style={{position:"relative", zIndex:2}}>
-  <img src={divider} alt="divider" />
+  <img src={divider2} alt="divider" />
 </div>
 
 </div>

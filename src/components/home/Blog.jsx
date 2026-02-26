@@ -49,42 +49,42 @@ const settings = {
             </div>
 
             <div>
-              <section className="blog-section">
-          <Slider {...settings} className="blog-slider">
+              <Slider {...settings} className="blog-slider">
 
-                  <div className="col-lg-4 col-md-6 col-sm-12">
-                    <div className="post-card p-4">
-                      <img src="https://umang-react.vercel.app/assets/pic2-BtQTdJ8y.jpg" alt="Blog Post Image" />
+  <div className="px-3">
+    <div className="post-card p-4">
+      <img src="https://umang-react.vercel.app/assets/pic2-BtQTdJ8y.jpg" alt="Blog Post Image" />
+    </div>
+    <h4 className='post-title mt-3'>To Apply Knowledge in Life</h4>
+    <p className="post-text">
+      This is a sample blog post text to demonstrate the styling of the post content.
+    </p>
+    <a href="#" className='btn-link'>Read more</a>
+  </div>
 
-                    </div>
-                    <h4 className='post-title p-4'>To Apply Knowledge in Life</h4>
-                    <p className="post-text">This is a sample blog post text to demonstrate the styling of the post content.</p>
-                                <a href="" className='btn-link'>Read more</a>
-                  </div>
+  <div className="px-3">
+    <div className="post-card p-4">
+      <img src="https://umang-react.vercel.app/assets/pic2-BtQTdJ8y.jpg" alt="" />
+    </div>
+    <h4 className='post-title mt-3'>To Apply Knowledge in Life</h4>
+    <p className="post-text">
+      This is a sample blog post text to demonstrate the styling of the post content.
+    </p>
+    <a href="#" className='btn-link'>Read more</a>
+  </div>
 
-                  <div className="col-lg-4 col-md-6 col-sm-12">
-                    <div className="post-card p-4">
-                      <img src="https://umang-react.vercel.app/assets/pic2-BtQTdJ8y.jpg" alt="" />
+  <div className="px-3">
+    <div className="post-card p-4">
+      <img src="https://umang-react.vercel.app/assets/pic2-BtQTdJ8y.jpg" alt="" />
+    </div>
+    <h4 className='post-title mt-3'>To Apply Knowledge in Life</h4>
+    <p className="post-text">
+      This is a sample blog post text to demonstrate the styling of the post content.
+    </p>
+    <a href="#" className='btn-link'>Read more</a>
+  </div>
 
-                    </div>
-                    <h4 className='post-title'>To Apply Knowledge in Life</h4>
-                    <p className="post-text">This is a sample blog post text to demonstrate the styling of the post content.</p>
-                    <a href="" className='btn-link'>Read more</a>
-                  </div>
-
-                  <div className="col-lg-4 col-md-6 col-sm-12">
-                    <div className="post-card p-4">
-                      <img src="https://umang-react.vercel.app/assets/pic2-BtQTdJ8y.jpg" alt="" />
-
-                    </div>
-                    <h4 className='post-title'>To Apply Knowledge in Life</h4>
-                    <p className="post-text">This is a sample blog post text to demonstrate the styling of the post content.</p>
-
-                    <a href="" className='btn-link'>Read more</a>
-                  </div>
-
-                </Slider>
-              </section>
+</Slider>
             </div>
           </div>
         </Container>

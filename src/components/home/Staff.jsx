@@ -1,8 +1,5 @@
 import Slider from "react-slick";
 import { Container } from "react-bootstrap";
-import { useEffect } from "react";
-import frame from "../../assets/image-frame2.png";
-
 
 const StaffSection = () => {
 const settings = {
@@ -51,36 +48,31 @@ const settings = {
             </div>
 
             <div>
-              <section className="staff-section">
-        <Slider {...settings} className="staff-slider">
-                  <div className=" col-lg-3 col-md-6 col-sm-12">
-                    <div className="staff-card">
-                      <img src="https://umang-react.vercel.app/assets/pic2-BtQTdJ8y.jpg" alt="" />
-                    </div>
-                  </div>
+            <Slider {...settings} className="staff-slider">
+  <div>
+    <div className="staff-card">
+      <img src="https://umang-react.vercel.app/assets/pic2-BtQTdJ8y.jpg" alt="" />
+    </div>
+  </div>
 
-                  <div className=" col-lg-3 col-md-6 col-sm-12">
-                    <div className="staff-card">
-                      <img src="https://umang-react.vercel.app/assets/pic2-BtQTdJ8y.jpg" alt="" />
+  <div>
+    <div className="staff-card">
+      <img src="https://umang-react.vercel.app/assets/pic2-BtQTdJ8y.jpg" alt="" />
+    </div>
+  </div>
 
-                    </div>
-                  </div>
+  <div>
+    <div className="staff-card">
+      <img src="https://umang-react.vercel.app/assets/pic2-BtQTdJ8y.jpg" alt="" />
+    </div>
+  </div>
 
-                  <div className=" col-lg-3 col-md-6 col-sm-12">
-                    <div className="staff-card">
-                      <img src="https://umang-react.vercel.app/assets/pic2-BtQTdJ8y.jpg" alt="" />
-
-                    </div>
-                  </div>
-
-                  <div className=" col-lg-3 col-md-6 col-sm-12">
-                    <div className="staff-card">
-                      <img src="https://umang-react.vercel.app/assets/pic2-BtQTdJ8y.jpg" alt="" />
-
-                    </div>
-                  </div>
-             </Slider>
-              </section>
+  <div>
+    <div className="staff-card">
+      <img src="https://umang-react.vercel.app/assets/pic2-BtQTdJ8y.jpg" alt="" />
+    </div>
+  </div>
+</Slider>
             </div>
           </div>
         </Container>

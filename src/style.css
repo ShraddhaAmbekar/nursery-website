@@ -2,16 +2,6 @@
    GLOBAL
 ================================ */
 
-body {
-  font-family: 'Nunito', sans-serif;
-  color: #666;
-  overflow-x: hidden;
-}
-
-section {
-  position: relative;
-}
-
 /* ================================
    TOP BAR (Premium Look)
 ================================ */
