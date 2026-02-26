@@ -16,21 +16,21 @@ const KidsCenter = () => {
       <section className="feature-section">
   <div className="row">
 
-    <div className="col">
+    <div className="col-lg-3 col-md-6 col-sm-12">
       <div className="feature-card">
         <img src="https://up.yimg.com/ib/th/id/OIP.a9gpuq57wkfLRucnnEBR4AHaF1?pid=Api&rs=1&c=1&qlt=95&w=139&h=109" alt=""/>
         <h6>To Think Creatively<br/>and Create</h6>
       </div>
     </div>
 
-    <div className="col">
+    <div className="col-lg-3 col-md-6 col-sm-12">
       <div className="feature-card">
        <img src="https://up.yimg.com/ib/th/id/OIP.a9gpuq57wkfLRucnnEBR4AHaF1?pid=Api&rs=1&c=1&qlt=95&w=139&h=109" alt=""/>
         <h6>To Feel Fine and<br/>Understand Emotions</h6>
       </div>
     </div>
 
-    <div className="col">
+    <div className="col-lg-3 col-md-6 col-sm-12">
       <div className="feature-card">
         <img src="https://up.yimg.com/ib/th/id/OIP.a9gpuq57wkfLRucnnEBR4AHaF1?pid=Api&rs=1&c=1&qlt=95&w=139&h=109" alt=""/>
         <h6>To be Independent<br/>and Active</h6>

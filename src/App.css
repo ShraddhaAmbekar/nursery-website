@@ -13,7 +13,14 @@
   --transition: all 0.3s ease;
 }
 
+* {
+  box-sizing: border-box;
+}
 
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
 /* ==========================================
    HERO SLIDER - UMANG STYLE
 ========================================== */
@@ -23,7 +30,8 @@
 }
 
 .hero-slide {
-  height: 100vh;
+  min-height: 100vh;
+  height: auto;
   display: flex !important;
   align-items: center;
   position: relative;
@@ -250,59 +258,39 @@
 
 .dropdown-title {
   cursor: pointer;
+}.nav-item-dropdown {
+  position: relative;
+}
+/* Wrapper */
+.custom-program-dropdown {
+  position: relative;
 }
 
-.custom-dropdown {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background: var(--light);
-  list-style: none;
-  padding: 15px 0;
-  margin: 0;
-  min-width: 220px;
-  border-radius: 10px;
-  box-shadow: var(--shadow-soft);
-  z-index: 999;
+/* Dropdown Box */
+.custom-program-dropdown .dropdown-menu {
   background-color: var(--light-bg);
   border: 3px solid var(--secondary);
-  display: block;
-  left: 0;
-  list-style: none;
-  opacity: 0;
-  padding: 10px 5px;
-  position: absolute;
-  visibility: hidden;
-  width: 250px;
-  z-index: 10;
   border-radius: 0 20px 20px 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  padding: 10px 5px;
+  min-width: 250px;
+  margin-top: 10px;
+  transition: all 0.3s ease;
 }
 
-.custom-dropdown li {
-  padding: 10px 22px;
-}
-
-
-.custom-dropdown li a {
-  text-decoration: none;
+/* Dropdown Items */
+.custom-program-dropdown .dropdown-item {
   font-weight: 500;
   font-size: 14px;
-  display: block;
+  padding: 10px 22px;
+  transition: 0.3s;
 }
 
-
-
-.custom-dropdown li:hover a {
-  padding-left: 6px;
+/* Hover Effect */
+.custom-program-dropdown .dropdown-item:hover {
+  padding-left: 28px;
+  background: transparent;
 }
-
-/* Show dropdown */
-.nav-item-dropdown:hover .custom-dropdown {
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(0);
-}
-
 /* ==========================================
    MOBILE RESPONSIVE
 ========================================== */
@@ -316,6 +304,13 @@
 }
 
 @media (max-width: 992px) {
+  @media (min-width: 992px) {
+  .nav-item-dropdown:hover .custom-dropdown {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+}
 
   .topbar-inner {
     flex-direction: column;
@@ -389,7 +384,7 @@
 }
 
 .feature-card img {
-  width: 200px;
+  width: auto;
   height: auto;
   object-fit: contain;
   margin-bottom: 15px;
@@ -805,7 +800,9 @@
   .topbar{
     display: none;
   }
+
 .hero-slide{
+min-height: min-content;
 height: min-content;
 padding: 60px 20px;
 margin-bottom: 10px;

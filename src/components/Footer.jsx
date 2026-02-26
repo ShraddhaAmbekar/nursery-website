@@ -1,4 +1,4 @@
-
+import divider1 from '../assets/line-divider.png'
 
 const Footer = () => {
   return (
@@ -6,7 +6,7 @@ const Footer = () => {
 
       {/* Top Wave */}
     <div className="section-divider" style={{position:"relative", zIndex:2}}>
-  <img src="/src/assets/line-divider.png" alt="divider" />
+  <img src={divider1} alt="divider" />
 </div>
 
       <div className="footer-container">

@@ -1,4 +1,4 @@
-import { Navbar, Nav, Container } from "react-bootstrap";
+import { Navbar, Nav, Container,NavDropdown } from "react-bootstrap";
 import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 
@@ -30,19 +30,20 @@ const MainNavbar = () => {
             <Nav.Link as={NavLink} to="/about">About</Nav.Link>
 
             {/* Programs Dropdown */}
-            <div className="nav-item-dropdown">
-              <Nav.Link  as={NavLink} to="/programs" className="dropdown-title">
-                Programs <i className="fa fa-chevron-down ms-1"></i>
-              </Nav.Link>
-
-              <ul className="custom-dropdown">
-                <li><a href="#">Nursery</a></li>
-                <li><a href="#">Lower KG</a></li>
-                <li><a href="#">Upper KG</a></li>
-                <li><a href="#">Day Care</a></li>
-              </ul>
-            </div>
-
+         <NavDropdown title="Programs" id="programs-dropdown" className="custom-program-dropdown">
+  <NavDropdown.Item as={NavLink} to="/programs/nursery">
+    Nursery
+  </NavDropdown.Item>
+  <NavDropdown.Item as={NavLink} to="/programs/lower-kg">
+    Lower KG
+  </NavDropdown.Item>
+  <NavDropdown.Item as={NavLink} to="/programs/upper-kg">
+    Upper KG
+  </NavDropdown.Item>
+  <NavDropdown.Item as={NavLink} to="/programs/day-care">
+    Day Care
+  </NavDropdown.Item>
+</NavDropdown>
             <Nav.Link as={NavLink} to="/contact">Contact</Nav.Link>
 
             
