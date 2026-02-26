@@ -1,7 +1,5 @@
 import Slider from "react-slick";
 import { Container } from "react-bootstrap";
-import { useEffect } from "react";
-
 
 const HeroSlider = () => {
 
