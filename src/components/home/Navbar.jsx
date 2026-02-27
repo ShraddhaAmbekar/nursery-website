@@ -34,10 +34,10 @@ const MainNavbar = () => {
   <NavDropdown.Item as={NavLink} to="/programs/nursery">
     Nursery
   </NavDropdown.Item>
-  <NavDropdown.Item as={NavLink} to="/programs/lower-kg">
+  <NavDropdown.Item as={NavLink} to="/programs/lkg">
     Lower KG
   </NavDropdown.Item>
-  <NavDropdown.Item as={NavLink} to="/programs/upper-kg">
+  <NavDropdown.Item as={NavLink} to="/programs/ukg">
     Upper KG
   </NavDropdown.Item>
   <NavDropdown.Item as={NavLink} to="/programs/day-care">
@@ -45,7 +45,7 @@ const MainNavbar = () => {
   </NavDropdown.Item>
 </NavDropdown>
             <Nav.Link as={NavLink} to="/contact">Contact</Nav.Link>
-
+<Nav.Link as={NavLink} to="/admissions" className="nav-btn"><button className="main-btn"> Admissions</button></Nav.Link>
             
 
           </Nav>

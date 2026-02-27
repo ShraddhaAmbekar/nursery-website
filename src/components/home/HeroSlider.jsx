@@ -2,7 +2,6 @@ import Slider from "react-slick";
 import { Container } from "react-bootstrap";
 
 const HeroSlider = () => {
-
   const settings = {
     dots: true,
     arrows: true,
@@ -13,6 +12,7 @@ const HeroSlider = () => {
     autoplaySpeed: 5000,
   };
 
+  
   return (
     <section className="hero-section  position-relative">
       <Slider {...settings} className="hero-slider">
@@ -46,11 +46,11 @@ const HeroSlider = () => {
             </div>
           </Container>
 
-          {/* Floating Shapes */}
+          {/* Floating Shapes
           <div className="shape shape-1"></div>
           <div className="shape shape-2"></div>
           <div className="shape shape-3"></div>
-          <div className="shape shape-4"></div>
+          <div className="shape shape-4"></div> */}
 
         </div>
 
@@ -83,11 +83,11 @@ const HeroSlider = () => {
             </div>
           </Container>
 
-          {/* Floating Shapes */}
+          {/* Floating Shapes
           <div className="shape shape-1"></div>
           <div className="shape shape-2"></div>
           <div className="shape shape-3"></div>
-          <div className="shape shape-4"></div>
+          <div className="shape shape-4"></div> */}
 
         </div>
       </Slider>

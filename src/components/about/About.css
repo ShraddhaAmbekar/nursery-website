@@ -1,0 +1,162 @@
+.dlab-bnr-inr .container {
+    display: table;
+    height: 100%;
+}
+
+.dlab-bnr-inr-entry {
+    display: table-cell;
+    vertical-align: middle;
+        text-align: center;
+}
+.dlab-bnr-inr h1 {
+    font-weight: 700;
+    font-size: 70px;
+    font-family: Abhaya Libre, serif;
+    margin-bottom: 5px;
+    position: relative;
+    line-height: 70px;
+}
+
+.dlab-bnr-inr .breadcrumb-row {
+    padding: 0;
+    background-color: #0000;
+}
+.breadcrumb-row {
+    background: #f9f9f9;
+    padding: 20px 0;
+}
+
+
+.breadcrumb-row ul {
+    margin: 0;
+}
+
+.dlab-bnr-inr {
+    height: 300px;
+    background-size: cover;
+    background-position: center center;
+    display: table;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.list-unstyled, .list-inline {
+    padding-left: 0;
+    list-style: none;
+}
+
+.breadcrumb-row ul li {
+    padding: 0;
+    margin-right: 3px;
+    color: #fff;
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.dlab-bnr-inr .breadcrumb-row ul li a
+ {
+    color: #fff;
+}
+
+ 
+.content-inner-2 {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.section-full {
+    position: relative;
+}
+.section-head {
+    margin-bottom: 40px;
+}
+.faq-box {
+    background-color: #fff04c;
+    padding: 25px 30px;
+    border-radius: 30px;
+     box-shadow: 4px 4px #ffdf00; 
+}
+
+.faq-box .accordion-header .accordion-button {
+    display: block;
+    color: #2f2b00;
+    font-size: 16px;
+    font-weight: 600;
+    border-bottom: 2px solid rgba(255, 255, 255, .8);
+    padding: 18px 0 18px 50px;
+    position: relative;
+    background: transparent;
+    line-height: 1.5;
+}
+.accordion-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: var(--light);
+    font-size: 1rem;
+    text-align: left;
+    background-color: var(--light);
+    border: 0;
+    border-radius: 0;
+    overflow-anchor: none;
+
+}
+.faq-box .accordion-header .accordion-button.collapsed:after {
+    content: "";
+}
+.faq-box .accordion-header .accordion-button:after {
+    content: "";
+    font-family: FontAwesome;
+    position: absolute;
+    font-size: 30px;
+    color: #000;
+    top: 8px;
+    width: auto;
+    height: auto;
+    text-shadow: 4px 1px 0 #fff;
+    left: 10px;
+    transition: all .5s;
+    -moz-transition: all .5s;
+    -webkit-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    background-image: none;
+}
+.accordion-button:after {
+    flex-shrink: 0;
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-left: auto;
+    content: "";
+    background-image: var(--bs-accordion-btn-icon);
+    background-repeat: no-repeat;
+    background-size: 1.25rem;
+    transform: rotate(-180deg);
+    transition: transform .2s ease-in-out;
+}
+.faq-box .accordion-item, .faq-box .accordion-header {
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+}
+.about-media img {
+    -webkit-mask-image: url('http://localhost:5173/src/assets/about-frame.png');
+    mask-image: url("http://localhost:5173/src/assets/about-frame.png");
+    -webkit-mask-position: center center;
+    mask-position: center center;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100%;
+    mask-size: 100%;
+    width: 100%;
+}
+img {
+    border-style: none;
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+

@@ -52,7 +52,7 @@ const Footer = () => {
           <div className="recent-item">
             <img src="/assets/kid1.jpg" alt="" />
             <div>
-              <h5>What It's Like Dating.</h5>
+              <h6>What It's Like Dating.</h6>
               <p>BY JONE | 💬 28</p>
             </div>
           </div>
@@ -60,7 +60,7 @@ const Footer = () => {
           <div className="recent-item">
             <img src="/assets/kid2.jpg" alt="" />
             <div>
-              <h5>The Reasons Why We Love</h5>
+              <h6>The Reasons Why We Love</h6>
               <p>BY MARRY | 💬 5</p>
             </div>
           </div>
@@ -75,14 +75,9 @@ const Footer = () => {
             placeholder="Your Email Address"
           />
 
-          <button>SUBSCRIBE</button>
+          <button className='btn btn-md rad'>SUBSCRIBE</button>
 
-          <div className="social-icons">
-            <i className="fab fa-facebook"></i>
-            <i className="fab fa-google-plus"></i>
-            <i className="fab fa-linkedin"></i>
-            <i className="fab fa-instagram"></i>
-          </div>
+     
         </div>
 
       </div>
@@ -93,9 +88,11 @@ const Footer = () => {
         <div className="float-btn">🛒</div> 
       </div> */}
 
-      <div className="copyright">
-        Copyright © 2025 Umang Academy. All right reserved
-      </div>
+     <div className="footer-bottom"><div className="container"><div className="row"><div className="col-lg-6 col-md-8 col-sm-6 text-left "> <span>Copyright © 2025 Umang Academy. All right reserved</span> </div>
+     <div className="col-lg-6 col-md-4 col-sm-6 text-right ">
+      <ul className="list-inline"><li>
+        <a className="btn-link facebook circle me-1" href="/" data-discover="true"><i className="fa fa-facebook"></i></a></li>
+        <li><a className="btn-link google-plus circle me-1" href="/" data-discover="true"><i className="fa fa-google-plus"></i></a></li><li><a className="btn-link linkedin circle me-1" href="/" data-discover="true"><i className="fa fa-linkedin"></i></a></li><li><a className="btn-link instagram circle" href="/" data-discover="true"><i className="fa fa-instagram"></i></a></li></ul></div></div></div></div>
 
     </footer>
   );

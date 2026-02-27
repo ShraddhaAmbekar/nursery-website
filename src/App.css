@@ -3,8 +3,8 @@
 ========================================== */
 :root {
   /* --primary: #FF6F00; */
-  --primary: #ff4081;
-  --secondary: #4169e1;
+  --primary: #ed5ab0;
+  --secondary: #3d56f0;
   --yellow:#fff000;
   --light-bg: #f9f9ff;
   --light:#fff;
@@ -161,6 +161,9 @@ html, body {
   color: var(--light);
 }
 
+
+
+
 /* ================================
    FLOATING IMAGE
 ================================ */
@@ -234,6 +237,21 @@ html, body {
   color: var(--primary);
 }
 
+.main-btn{
+  padding: 10px 30px;
+  border-radius: 40px;
+  background: var(--primary);
+  color: var(--light);
+  border: none;
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+.main-btn:hover {
+  background: var(--secondary);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.1);}
+  
 .navbar-nav .nav-link {
   font-size: 14px;
   font-weight: 600;
@@ -484,19 +502,94 @@ html, body {
 .gallery-card {
   text-align: center;
 }
+.gallery-card:hover{
+
+}
+.overlay-bx {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: 0.4s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dlab-media:after{
+    background-color: #191c0a;
+}
+
+/* Center arrow container */
+.gallery-slider {
+  position: relative;
+}
+
+/* Hide default slick arrows */
+.slick-prev,
+.slick-next {
+  display: none !important;
+}
+
+/* Slider container */
+.gallery-slider {
+  position: relative;
+  padding-bottom: 80px; /* space for arrows */
+}
+.gallery-item {
+  padding: 15px;
+}
+
+.gallery-item img {
+  width: 100%;
+  border-radius: 20px;
+  border: 3px dashed #ff4da6;
+  transition: transform 0.5s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.05);
+}
+/* Sprite arrows */
+.sprite-arrow {
+  width: 50px;
+  height: 50px;
+  background-image: url("/assets/arrow.png"); /* your sprite */
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  position: absolute;
+  bottom: 10px;
+  transition: all 0.4s ease;
+  z-index: 10;
+}
+
+/* Left arrow (centered area) */
+.sprite-arrow.prev {
+  left: 50%;
+  transform: translateX(-60px);
+  background-position: -53px 0;
+}
+.sprite-arrow.prev:hover {
+  background-position: 0%;
+}
+/* Right arrow */
+.sprite-arrow.next {
+  left: 50%;
+  transform: translateX(0);
+  background-position: -106px 0;
+}
+
 
 /* Frame Wrapper */
 .frame {
   position: relative;
   width: 100%;
   max-width: 400px;
-  aspect-ratio: 1 / 1;
-
-  background-image: url("/src/assets/image-frame.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-
+  aspect-ratio: 1 / 1; 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -510,19 +603,72 @@ html, body {
   border-radius: 10px;
 }
 
-.staff-card {
-  text-align: center;
-  margin-bottom: 20px;
-  display: flex;
-    justify-content: center;
+
+ .staff-card img {
+ mask-image: url("/src/assets/image-frame2.png");
+
+    mask-position: center center;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100%;
+    mask-size: 100%;
+}
+.team-box {
+  position: relative;
 }
 
-.staff-card img {
-  width: 250px;
-  height: auto;
-  object-fit: cover;
-  margin-bottom: 15px;
+.dlab-thum {
+  position: relative;
+  overflow: hidden;
 }
+
+.overlay-bx {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.9);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s ease;
+}
+
+.team-box .team-info {
+    font-size: 13px;
+}
+.team-box ul {
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+
+.list-inline>li {
+    padding-left: 2px;
+    padding-right: 2px;
+    display: inline-block;
+}
+
+.team-box ul li a {
+    width: 26px;
+    height: 26px;
+    color: #fff;
+    display: block;
+    border-radius: 30px;
+    font-size: 12px;
+    line-height: 26px;
+    background: var(--primary);
+}
+
+.team-box:hover .overlay-bx {
+  opacity: 1;
+  visibility: visible;
+}
+
+.dlab-thum img {
+  transition: transform 0.5s ease;
+}
+
 
 /* Blog */
 .post-card img {
@@ -604,8 +750,8 @@ html, body {
 .footer-col h5 {
   font-size: 21px;
   font-weight: 600;
-  color: #4169e1;
-  margin-bottom: 40px;
+  color: var(--secondary);
+  margin-bottom: 30px;
   text-transform: uppercase;
 }
 
@@ -631,7 +777,7 @@ html, body {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: var(--primary);
+  background: var(--secondary);
   position: absolute;
   left: 0;
   top: 50%;
@@ -641,7 +787,7 @@ html, body {
 .footer-col ul li a {
   text-decoration: none;
   transition: 0.2s;
-  color: var(--dark-gray);
+  color: #191918;
 }
 
 .footer-col ul li a:hover {
@@ -654,6 +800,13 @@ html, body {
   display: flex;
   gap: 12px;
   margin-bottom: 20px;
+  margin-bottom: 0;
+    margin-top: 0;
+    text-transform: capitalize;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 500;
+    color: #000;
 }
 
 .recent-item img {
@@ -663,13 +816,19 @@ html, body {
   object-fit: cover;
 }
 
-.recent-item h5 {
+.recent-item h6 {
   font-size: 15px;
+  color:#000
 }
 
 .recent-item p {
-  font-size: 12px;
-  color: var(--secondary);
+     padding: 0;
+    display: inline-block;
+    color:var(--secondary);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 15px;
+
 }
 
 /* Newsletter */
@@ -684,10 +843,11 @@ html, body {
 .newsletter button {
   width: 160px;
   padding: 14px;
+      border-radius: 40px;
   border: none;
-  border-radius: 40px;
+
   background: var(--primary);
-  color: white;
+  color: var(--light);
   font-weight: bold;
   cursor: pointer;
 }
@@ -700,6 +860,44 @@ html, body {
   font-size: 18px;
   color: var(--secondary);
 }
+.footer-bottom {
+    background-color: #c4eafb;
+    padding: 40px 0;
+    color: #191d21;
+    border-top: 1px solid rgba(0, 0, 0, .1);
+}
+
+.text-right {
+    text-align: right;
+}
+
+.footer-bottom ul {
+    margin: 0;
+}
+
+.list-inline>li {
+    padding-left: 2px;
+    padding-right: 2px;
+    display: inline-block;
+}
+.btn-link {
+    color: rgb(25, 25, 24);
+    font-size: 18px;
+    font-style: italic;
+    display: inline-block;
+    font-weight: 500;
+    background: none 0px 0px repeat scroll rgba(0, 0, 0, 0);
+    border-width: 0px;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    padding: 0px;
+}
+.footer-bottom .btn-link {
+    color: var(--secondary);
+    font-size: 18px;
+}
+
 
 /* Floating buttons
 .floating-buttons {

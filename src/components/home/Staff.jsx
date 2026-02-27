@@ -1,15 +1,16 @@
 import Slider from "react-slick";
 import { Container } from "react-bootstrap";
+import staffImg1 from "../../assets/staff.jpg"
 
 const StaffSection = () => {
-const settings = {
+  const settings = {
     dots: true,
     infinite: false,
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 4,
     initialSlide: 0,
-     responsive: [
+    responsive: [
       {
         breakpoint: 1024,
         settings: {
@@ -39,7 +40,7 @@ const settings = {
   return (
     <>
       <section className="section2 mt-5">
-      
+
         <Container>
           <div className="section2-wrapper">
             <div className="section-head text-center mb-5">
@@ -48,31 +49,136 @@ const settings = {
             </div>
 
             <div>
-            <Slider {...settings} className="staff-slider">
-  <div>
-    <div className="staff-card">
-      <img src="https://umang-react.vercel.app/assets/pic2-BtQTdJ8y.jpg" alt="" />
-    </div>
-  </div>
+              <Slider {...settings} className="staff-slider">
+                <div>
+                  <div className="team-box">
+                    <div className="staff-card">
+                      <div className="dlab-thum">
+                        <img
+                           src={staffImg1}
+                          alt=""
+                        />
 
-  <div>
-    <div className="staff-card">
-      <img src="https://umang-react.vercel.app/assets/pic2-BtQTdJ8y.jpg" alt="" />
-    </div>
-  </div>
+                        <div className="overlay-bx">
+                          <h5 className="team-title">
+                            <a href="/teachers-details">Jone Doe</a>
+                          </h5>
+                             <span className="team-info">Teachers</span>
+                          <ul className="list-inline">
+                            <li><a href="/" data-discover="true">
+                              <i className="fa fa-facebook"></i></a></li>
+                            <li><a href="/" data-discover="true">
+                              <i className="fa fa-google-plus"></i></a></li>
+                            <li><a href="/" data-discover="true">
+                              <i className="fa fa-linkedin"></i></a></li>
+                            <li><a href="/" data-discover="true"><i className="fa fa-instagram"></i></a></li>
+                            <li><a href="/" data-discover="true">
+                              <i className="fa fa-twitter"></i></a></li>
+                          </ul>
+                       
+                        </div>
 
-  <div>
-    <div className="staff-card">
-      <img src="https://umang-react.vercel.app/assets/pic2-BtQTdJ8y.jpg" alt="" />
-    </div>
-  </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                 <div>
+                  <div className="team-box">
+                    <div className="staff-card">
+                      <div className="dlab-thum">
+                        <img
+                          src={staffImg1}
+                          alt=""
+                        />
 
-  <div>
-    <div className="staff-card">
-      <img src="https://umang-react.vercel.app/assets/pic2-BtQTdJ8y.jpg" alt="" />
-    </div>
-  </div>
-</Slider>
+                        <div className="overlay-bx">
+                          <h5 className="team-title">
+                            <a href="/teachers-details">Jone Doe</a>
+                          </h5>
+                             <span className="team-info">Teachers</span>
+                          <ul className="list-inline">
+                            <li><a href="/" data-discover="true">
+                              <i className="fa fa-facebook"></i></a></li>
+                            <li><a href="/" data-discover="true">
+                              <i className="fa fa-google-plus"></i></a></li>
+                            <li><a href="/" data-discover="true">
+                              <i className="fa fa-linkedin"></i></a></li>
+                            <li><a href="/" data-discover="true"><i className="fa fa-instagram"></i></a></li>
+                            <li><a href="/" data-discover="true">
+                              <i className="fa fa-twitter"></i></a></li>
+                          </ul>
+                       
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                 <div>
+                  <div className="team-box">
+                    <div className="staff-card">
+                      <div className="dlab-thum">
+                        <img
+                            src={staffImg1}
+                          alt=""
+                        />
+
+                        <div className="overlay-bx">
+                          <h5 className="team-title">
+                            <a href="/teachers-details">Jone Doe</a>
+                          </h5>
+                             <span className="team-info">Teachers</span>
+                          <ul className="list-inline">
+                            <li><a href="/" data-discover="true">
+                              <i className="fa fa-facebook"></i></a></li>
+                            <li><a href="/" data-discover="true">
+                              <i className="fa fa-google-plus"></i></a></li>
+                            <li><a href="/" data-discover="true">
+                              <i className="fa fa-linkedin"></i></a></li>
+                            <li><a href="/" data-discover="true"><i className="fa fa-instagram"></i></a></li>
+                            <li><a href="/" data-discover="true">
+                              <i className="fa fa-twitter"></i></a></li>
+                          </ul>
+                       
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                  <div>
+                  <div className="team-box">
+                    <div className="staff-card">
+                      <div className="dlab-thum">
+                        <img
+                          src={staffImg1}
+                          alt=""
+                        />
+
+                        <div className="overlay-bx">
+                          <h5 className="team-title">
+                            <a href="/teachers-details">Jone Doe</a>
+                          </h5>
+                             <span className="team-info">Teachers</span>
+                          <ul className="list-inline">
+                            <li><a href="/" data-discover="true">
+                              <i className="fa fa-facebook"></i></a></li>
+                            <li><a href="/" data-discover="true">
+                              <i className="fa fa-google-plus"></i></a></li>
+                            <li><a href="/" data-discover="true">
+                              <i className="fa fa-linkedin"></i></a></li>
+                            <li><a href="/" data-discover="true"><i className="fa fa-instagram"></i></a></li>
+                            <li><a href="/" data-discover="true">
+                              <i className="fa fa-twitter"></i></a></li>
+                          </ul>
+                       
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </Slider>
             </div>
           </div>
         </Container>

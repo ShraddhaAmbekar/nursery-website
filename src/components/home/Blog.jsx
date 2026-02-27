@@ -2,6 +2,8 @@ import React from 'react'
 
 import { Container } from "react-bootstrap";
 import Slider from 'react-slick';
+import imageFrame from "../../assets/image-frame.png"
+
 const Blog = () => {
 const settings = {
     dots: true,
@@ -52,7 +54,7 @@ const settings = {
               <Slider {...settings} className="blog-slider">
 
   <div className="px-3">
-    <div className="post-card p-4">
+    <div className="post-card p-4 ">
       <img src="https://umang-react.vercel.app/assets/pic2-BtQTdJ8y.jpg" alt="Blog Post Image" />
     </div>
     <h4 className='post-title mt-3'>To Apply Knowledge in Life</h4>
