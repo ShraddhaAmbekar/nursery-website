@@ -453,7 +453,9 @@ html, body {
   opacity: 0.5;
 }
 
-
+.section-divider img{
+  max-width: fit-content;
+}
 .cold-heading {
   position: relative;
   font-size: 50px;
@@ -483,19 +485,11 @@ html, body {
 
 }
 
-/* Row */
-.gallery-row {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  flex-wrap: wrap;
-}
+
 
 /* Column */
 .gallery-col {
-  flex: 1 1 300px;
-  display: flex;
-  justify-content: center;
+  padding: 10px;
 }
 
 /* Card */
@@ -527,18 +521,31 @@ html, body {
 .gallery-slider {
   position: relative;
 }
-
-/* Hide default slick arrows */
-.slick-prev,
-.slick-next {
-  display: none !important;
+.slick-slider {
+  width: 100%;
+  touch-action: pan-y;
 }
-
+.slick-slide {
+  height: auto !important;
+}
+.slick-slide img {
+  width: 100%;
+  display: block;
+}
+.slick-list {
+  overflow: hidden;
+}
+.slider-container {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
 /* Slider container */
 .gallery-slider {
   position: relative;
   padding-bottom: 80px; /* space for arrows */
 }
+
 .gallery-item {
   padding: 15px;
 }

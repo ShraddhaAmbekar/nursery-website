@@ -15,6 +15,7 @@ const GallerySection = () => {
 
   const settings = {
     dots: false,
+    initialSlide: 0,
     infinite: true,
     speed: 800,
     slidesToShow: 3,
@@ -33,9 +34,10 @@ const GallerySection = () => {
         },
       },
       {
-        breakpoint: 576,
+        breakpoint: 768,
         settings: {
           slidesToShow: 1,
+                  centerMode: false,
         },
       },
     ],
@@ -45,7 +47,7 @@ const GallerySection = () => {
 
     <>
       <section className="section2 mt-5">
-        <Container>
+        <Container fluid>
           <div className="section2-wrapper">
             <div className="section-head text-center mb-5">
               <h2 className="heading">Gallery of our Classes</h2>
@@ -69,7 +71,7 @@ const GallerySection = () => {
 
                           />
 
-                          <div class="dlab-thum dlab-img-overlay1"><img src="/assets/pic1-C5dqVgPR.jpg" alt="#" /><div class="overlay-bx"><div class="overlay-icon"><span class="check-km lightimg"><i class="fa fa-search icon-bx-xs"></i></span></div></div></div>
+                          <div className="dlab-thum dlab-img-overlay1"><img src="/assets/pic1-C5dqVgPR.jpg" alt="#" /><div className="overlay-bx"><div className="overlay-icon"><span className="check-km lightimg"><i className="fa fa-search icon-bx-xs"></i></span></div></div></div>
                         </div>
                       </div>
                     </div>
