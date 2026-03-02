@@ -2,6 +2,7 @@ import Slider from "react-slick";
 import { Container } from "react-bootstrap";
 import arrowImg from "../../assets/arrow.png";
 import imageFrame from "../../assets/image-frame.png";
+import { useEffect, useState } from "react";
 
 
 const GallerySection = () => {
@@ -12,7 +13,11 @@ const GallerySection = () => {
   const PrevArrow = ({ onClick }) => {
     return <div className="sprite-arrow prev" style={{ backgroundImage: `url(${arrowImg})` }} onClick={onClick}></div>;
   };
+const [mounted, setMounted] = useState(false);
 
+useEffect(() => {
+  setMounted(true);
+}, []);
   const settings = {
     dots: false,
     initialSlide: 0,
@@ -58,6 +63,7 @@ const GallerySection = () => {
               <section className="gallery-section">
 
                 <div className="slider-container">
+                  {mounted && (
                   <Slider {...settings} className="gallery-slider">
                     <div className="gallery-col">
                       <div className="gallery-card">
@@ -115,7 +121,7 @@ const GallerySection = () => {
                         </div>
                       </div>
                     </div>
-                  </Slider>
+                  </Slider>)}
                 </div>
               </section>
 
