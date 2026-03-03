@@ -2,7 +2,6 @@ import Slider from "react-slick";
 import { Container } from "react-bootstrap";
 import arrowImg from "../../assets/arrow.png";
 import imageFrame from "../../assets/image-frame.png";
-import { useEffect, useState } from "react";
 
 
 const GallerySection = () => {
@@ -13,11 +12,7 @@ const GallerySection = () => {
   const PrevArrow = ({ onClick }) => {
     return <div className="sprite-arrow prev" style={{ backgroundImage: `url(${arrowImg})` }} onClick={onClick}></div>;
   };
-const [mounted, setMounted] = useState(false);
 
-useEffect(() => {
-  setMounted(true);
-}, []);
   const settings = {
     dots: false,
     initialSlide: 0,
@@ -39,10 +34,9 @@ useEffect(() => {
         },
       },
       {
-        breakpoint: 768,
+        breakpoint: 576,
         settings: {
           slidesToShow: 1,
-                  centerMode: false,
         },
       },
     ],
@@ -63,24 +57,26 @@ useEffect(() => {
               <section className="gallery-section">
 
                 <div className="slider-container">
-                  {mounted && (
                   <Slider {...settings} className="gallery-slider">
-                    <div className="gallery-col">
-                      <div className="gallery-card">
-                        <div className="frame" style={{
-                          background: `url(${imageFrame} ) no-repeat center center`,
-                          backgroundSize: 'contain',
-                        }}>
-                          <img
-                            src="https://umang-react.vercel.app/assets/pic2-BtQTdJ8y.jpg"
-                            alt="gallery"
+                    <div className="gallery-card">
+  <div
+    className="frame"
+    style={{
+      background: `url(${imageFrame}) no-repeat center center`,
+      backgroundSize: "contain",
+    }}
+  > 
+  <div className="overlay">
+      <i className="fa fa-search"></i>
+    </div>
+    <img
+      src="https://umang-react.vercel.app/assets/pic2-BtQTdJ8y.jpg"
+      alt="gallery"
+    />
 
-                          />
-
-                          <div className="dlab-thum dlab-img-overlay1"><img src="/assets/pic1-C5dqVgPR.jpg" alt="#" /><div className="overlay-bx"><div className="overlay-icon"><span className="check-km lightimg"><i className="fa fa-search icon-bx-xs"></i></span></div></div></div>
-                        </div>
-                      </div>
-                    </div>
+   
+  </div>
+</div>
                     <div className="gallery-col">
                       <div className="gallery-card">
                         <div className="frame" style={{
@@ -121,7 +117,7 @@ useEffect(() => {
                         </div>
                       </div>
                     </div>
-                  </Slider>)}
+                  </Slider>
                 </div>
               </section>
 
