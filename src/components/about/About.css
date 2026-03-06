@@ -35,10 +35,9 @@
     height: 300px;
     background-size: cover;
     background-position: center center;
-    display: table;
     width: 100%;
     text-align: center;
-    padding-bottom: 30px;
+    padding-bottom: 0px;
 }
 
 .list-unstyled, .list-inline {

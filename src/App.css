@@ -2,9 +2,11 @@
    GLOBAL VARIABLES (Professional Practice)
 ========================================== */
 :root {
-  /* --primary: #FF6F00; */
-  --primary: #ed5ab0;
-  --secondary: #3d56f0;
+ 
+  /* --primary: #ed5ab0; */
+  --primary:#F9A82F;
+  /* --secondary: #3d56f0; */
+  --secondary:#2F7F9D;;
   --yellow:#fff000;
   --light-bg: #f9f9ff;
   --light:#fff;
@@ -39,13 +41,16 @@ html, body {
 
 /* Background Images */
 .slide1 {
-  background: url("https://umang-react.vercel.app/assets/slide1-D34Xry-A.jpg") no-repeat center center/cover;
+  background: url("/src/assets/hero1.webp") no-repeat center center/cover;
 }
 
 .slide2 {
-  background: url("https://umang-react.vercel.app/assets/slide2-DInvvweB.jpg") no-repeat center center/cover;
+  background: url("/src/assets/hero2.webp") no-repeat center center/cover;
 }
 
+.slide3 {
+  background: url("/src/assets/hero3.webp") no-repeat center center/cover;
+}
 /* Light overlay like template */
 .hero-slide::before {
   content: "";

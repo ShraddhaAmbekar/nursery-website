@@ -10,6 +10,7 @@ import Blog from "./Blog";
 const Home = () => {
   return (
     <div>
+
       <HeroSlider />
       <KidsCenter />
       <Dream />
