@@ -1,12 +1,12 @@
 import React from 'react'
-import cloludDivider from "../../assets/cloud-divider.png"
-import aboutTitle from "../../assets/about-title.jpg"
-import aboutBg from "../../assets/about-bg.png"
-import { Accordion } from 'react-bootstrap'
-import about1Img from "../../assets/about1-img.jpg"
-import aboutFrame from "../../assets/about-frame.png"
-import divider1 from "../../assets/line-divider.png"
-import divider2 from "../../assets/line-divider2.png"
+import cloludDivider from "../../assets/cloud-divider.png";
+import aboutTitle from "../../assets/about-title.jpg";
+import aboutBg from "../../assets/about-bg.png";
+import { Accordion } from 'react-bootstrap';
+import about1Img from "../../assets/about1-img.jpg";
+import aboutFrame from "../../assets/about-frame.png";
+import divider1 from "../../assets/line-divider.png";
+import divider2 from "../../assets/line-divider2.png";
 
 const ContentBlock = () => {
   return (
