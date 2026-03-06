@@ -21,7 +21,7 @@ const Dream = () => {
         <a href="/faqs" className="button-join">Learn more</a>
       </div>
 
-      <div className=" col-lg-5 col-md-12 col-sm-12 col-12right-content">
+      <div className=" col-lg-5 col-md-12 col-sm-12 col-12 right-content">
 
         <div className="info-card">
           <h3 className="info-card-heading">Infants</h3>

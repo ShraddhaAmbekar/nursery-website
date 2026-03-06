@@ -1,6 +1,7 @@
 import { Navbar, Nav, Container, NavDropdown } from "react-bootstrap";
 import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
+import logo from "../../assets/logo.png"
 
 const MainNavbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -16,10 +17,13 @@ const MainNavbar = () => {
   return (
     <Navbar expand="lg" className={`main-navbar ${scrolled ? "scrolled" : ""}`}>
       <Container>
-        <Navbar.Brand className="logo">
-          <span className="logo-blue">Humming</span>
-          <span className="logo-pink">Kitez</span>
-        </Navbar.Brand>
+  <Navbar.Brand href="/">
+  <img
+    src={logo}
+    alt="Humming Kitez"
+    className="logo-img"
+  />
+</Navbar.Brand>
 
         <Navbar.Toggle />
         <Navbar.Collapse>
