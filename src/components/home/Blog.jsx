@@ -61,9 +61,9 @@ const settings = {
                               }}>
       <img src="https://umang-react.vercel.app/assets/pic2-BtQTdJ8y.jpg" alt="Blog Post Image" />
     </div>
-    <h4 className='post-title mt-3'>To Apply Knowledge in Life</h4>
+    <h4 className='post-title mt-3'>To Apply  Knowledge in Life</h4>
     <p className="post-text">
-      This is a sample blog post text to demonstrate the styling of the post content.
+      This is a sample blog post text to demonstr ate the styling of the post content.
     </p>
     <a href="#" className='btn-link'>Read more</a>
   </div></div>
