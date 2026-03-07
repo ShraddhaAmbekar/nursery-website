@@ -22,7 +22,6 @@
 
 html, body {
   width: 100%;
-  overflow-x: hidden;
 }
 
 .logo-img{
@@ -38,25 +37,51 @@ html, body {
 }
 
 .hero-slide {
-  min-height: 100vh;
+  min-height: 95vh;
   height: auto;
   display: flex !important;
   align-items: center;
   position: relative;
 }
 
+.slide1,
+.slide2,
+.slide3 {
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: white;
+}
 /* Background Images */
 .slide1 {
-  background: url("/src/assets/hero1.webp") no-repeat center center/cover;
+  background-image: url("/src/assets/hero1.webp");
 }
 
 .slide2 {
-  background: url("/src/assets/hero2.webp") no-repeat center center/cover;
+  background-image: url("/src/assets/hero2.webp");
 }
 
 .slide3 {
-  background: url("/src/assets/hero3.webp") no-repeat center center/cover; 
+  background-image: url("/src/assets/hero3.webp");
 }
+
+/* Tablet */
+@media (max-width: 992px) {
+  .slide1,
+  .slide2,
+  .slide3 {
+    height: 60vh;
+    background-position: right;
+  }
+}
+
+
 /* Light overlay like template */
 .hero-slide::before {
   content: "" ;
@@ -228,7 +253,7 @@ html, body {
    MAIN NAVBAR
 ========================================== */
 
-.main-navbar {
+.main-navbar{
   background: var(--light-bg);
   padding: 18px 0;
   transition: var(--transition);
@@ -968,6 +993,9 @@ html, body {
 
 
 @media (max-width: 1200px) {
+  .feature-section {
+  padding: 0px 0;
+}
   .hero-left h2 {
     font-size: 55px;
     line-height: 60px;

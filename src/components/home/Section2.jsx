@@ -4,47 +4,50 @@ const Dream = () => {
   return (
     <div>
       <section className="dream-section">
-  <div className="container">
-    <div className="row">
+        <div className="container">
+          <div className="row">
 
-      <div className="col-lg-7 col-md-12 col-sm-12 col-12 left-content">
-        <h2 className='heading'>
-          Do you dream that<br/>
-          your child will become<br/>
-          intelligent?
-        </h2>
+            <div className="col-lg-7 col-md-12 col-sm-12 col-12 left-content">
+              <h2 className='heading'>
+                About Humming Kitez
+              </h2>
 
-        <p className='subheading'>
-      The concept of school and pre-school education consists of 3 programs of development and training in our academy, developed in collaboration with the institute of the children's university, which will help your children to learn subjects in the best possible way.
-        </p>
+              <p className='subheading'>
+                Humming Kitez is a nurturing early learning space designed to help young children explore, learn, and grow with confidence. We believe that the early years of childhood are the foundation for a lifetime of curiosity, creativity, and discovery.
 
-        <a href="/faqs" className="button-join">Learn more</a>
-      </div>
+                At Humming Kitez, learning goes beyond books. Through play-based activities, creative exploration, and caring guidance from our teachers, children develop essential skills, confidence, and a love for learning.
 
-      <div className=" col-lg-5 col-md-12 col-sm-12 col-12 right-content">
+                Our goal is to create a safe, joyful, and inspiring environment where every child feels valued, supported, and encouraged to reach their fullest potential.
+              </p>
 
-        <div className="info-card">
-          <h3 className="info-card-heading">Infants</h3>
-          <p className="subheading">Lectus placerat a ultricies a,interdum donec eget metus auguen u Fusce mollis imperdiet interdum donec eget metus.</p>
-        </div>
+              <a href="/faqs" className="button-join">Learn more</a>
+            </div>
 
-        <div className="info-card">
-          <h3 className="info-card-heading">I myself</h3>
-          <p className="subheading">Lectus placerat a ultricies a,interdum donec eget metus auguen u Fusce mollis imperdiet interdum donec eget metus.</p>
-        </div>
+            <div className=" col-lg-5 col-md-12 col-sm-12 col-12 right-content">
 
-        <div className="info-card">
-          <h3 className="info-card-heading">Goodie</h3>
-          <p className="subheading">Lectus placerat a ultricies a,interdum donec eget metus auguen u Fusce mollis imperdiet interdum donec eget metus..</p>
-        </div>
+              <div className="info-card">
+                <h3 className="info-card-heading">Holistic Smart Curriculum</h3>
+                <p className="subheading">A thoughtfully designed curriculum that supports cognitive, emotional, and creative development.</p>
+              </div>
 
-      </div>
+              <div className="info-card">
+                <h3 className="info-card-heading">Safe & Nurturing Environment</h3>
+                <p className="subheading">A secure and caring space where children feel comfortable, confident, and happy.</p>
+              </div>
 
-    </div></div>
+              <div className="info-card">
+                <h3 className="info-card-heading">Play-Based Learning</h3>
+                <p className="subheading">A secure and caring space where children feel comfortable, confident, and happy.</p>
+              </div>
+               <div className="info-card">
+                <h3 className="info-card-heading">Play-Based Learning</h3>
+                <p className="subheading">A secure and caring space where children feel comfortable, confident, and happy.</p>
+              </div>
+            </div>
+          </div></div>
+      </section>
 
-</section>
-
-      </div>
+    </div>
   )
 }
 

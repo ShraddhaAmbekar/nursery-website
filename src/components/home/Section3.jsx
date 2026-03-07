@@ -18,10 +18,8 @@ const Section3 = () => {
   <div className="row py-5">
     <div className="col-lg-6 col-md-12 col-sm-12 col-12">
       <div className="section-head">
-        <h2 className="cold-heading">Education from birth<br/>begins with us</h2>
-        <p className="cold-subheading">Our children's academy, together with one of the oldest private schools, created a joint
-          school preparation project. The goal of the project is the harmonious development, socializationfor admission
-          to the best educational institutions of our city.</p>
+        <h2 className="cold-heading">The First Step in Your Child’s Learning Journey</h2>
+        <p className="cold-subheading">At Humming Kitez, we believe early childhood is the foundation of lifelong learning. Through guided play, nurturing care, and a holistic smart curriculum, we help children grow socially, emotionally, and intellectually.</p>
       </div>
     </div>
     <div className="col-lg-6 col-md-6 col-sm-12 col-12"></div>

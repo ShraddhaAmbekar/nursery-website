@@ -44,8 +44,8 @@ const StaffSection = () => {
         <Container>
           <div className="section2-wrapper">
             <div className="section-head text-center mb-5">
-              <h2 className="heading">About the Teachers</h2>
-              <p className="subheading text-center">We have an excellent teacher to child ratio at our Kindergarten to ensure that each child receives the attention he or she needs</p>
+              <h2 className="heading">Meet Our Amazing Teachers.</h2>
+              <p className="subheading text-center">A passionate team dedicated to ensure  every child gets the care and guidance they deserve.</p>
             </div>
 
             <div>

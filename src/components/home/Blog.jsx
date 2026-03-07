@@ -5,14 +5,14 @@ import Slider from 'react-slick';
 import imageFrame from "../../assets/image-frame.png"
 
 const Blog = () => {
-const settings = {
+  const settings = {
     dots: true,
     infinite: false,
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 3,
     initialSlide: 0,
-     responsive: [
+    responsive: [
       {
         breakpoint: 1024,
         settings: {
@@ -46,59 +46,75 @@ const settings = {
         <Container>
           <div className="section2-wrapper">
             <div className="section-head text-center mb-5">
-              <h2 className="heading">From the Blog</h2>
+              <h2 className="heading">Early Learning Programs</h2>
               <p className="subheading text-center">We have an excellent teacher to child ratio at our Kindergarten to ensure that each child receives the attention he or she needs</p>
             </div>
 
             <div>
               <Slider {...settings} className="blog-slider">
 
-  <div className="px-3">
-    <div className="post-card ">
-        <div className="frame" style={{
-                                background: `url(${imageFrame} ) no-repeat center center`,
-                                backgroundSize: 'contain',
-                              }}>
-      <img src="https://umang-react.vercel.app/assets/pic2-BtQTdJ8y.jpg" alt="Blog Post Image" />
-    </div>
-    <h4 className='post-title mt-3'>To Apply  Knowledge in Life</h4>
-    <p className="post-text">
-      This is a sample blog post text to demonstr ate the styling of the post content.
-    </p>
-    <a href="#" className='btn-link'>Read more</a>
-  </div></div>
+                <div className="px-3">
+                  <div className="post-card ">
+                    <div className="frame" style={{
+                      background: `url(${imageFrame} ) no-repeat center center`,
+                      backgroundSize: 'contain',
+                    }}>
+                      <img src="https://umang-react.vercel.app/assets/pic2-BtQTdJ8y.jpg" alt="Blog Post Image" />
+                    </div>
+                    <h4 className='post-title mt-3'>
+                      Playgroup</h4>
+                    <p className="post-text">
+                      Where curiosity begins through play and discovery
+                    </p>
+                    <a href="#" className='btn-link'>Read more</a>
+                  </div></div>
 
-  <div className="px-3">
-    <div className="post-card ">
-      <div className="frame" style={{
-                                background: `url(${imageFrame} ) no-repeat center center`,
-                                backgroundSize: 'contain',
-                              }}>
-      <img src="https://umang-react.vercel.app/assets/pic2-BtQTdJ8y.jpg" alt="" /></div>
+                <div className="px-3">
+                  <div className="post-card ">
+                    <div className="frame" style={{
+                      background: `url(${imageFrame} ) no-repeat center center`,
+                      backgroundSize: 'contain',
+                    }}>
+                      <img src="https://umang-react.vercel.app/assets/pic2-BtQTdJ8y.jpg" alt="" /></div>
 
-    <h4 className='post-title mt-3'>To Apply Knowledge in Life</h4>
-    <p className="post-text">
-      This is a sample blog post text to demonstrate the styling of the post content.
-    </p>
-    <a href="#" className='btn-link'>Read more</a>
-  </div>    </div>
+                    <h4 className='post-title mt-3'>Kindergarten</h4>
+                    <p className="post-text">
+                      Building confidence, creativity, and early academic skills.
+                    </p>
+                    <a href="#" className='btn-link'>Read more</a>
+                  </div>    </div>
 
-  <div className="px-3">
-    <div className="post-card">
-        <div className="frame" style={{
-                                background: `url(${imageFrame} ) no-repeat center center`,
-                                backgroundSize: 'contain',
-                              }}>
-      <img src="https://umang-react.vercel.app/assets/pic2-BtQTdJ8y.jpg" alt="" /></div>
-    
-    <h4 className='post-title mt-3'>To Apply Knowledge in Life</h4>
-    <p className="post-text">
-      This is a sample blog post text to demonstrate the styling of the post content.
-    </p>
-    <a href="#" className='btn-link'>Read more</a>
-  </div>
-</div>
-</Slider>
+                <div className="px-3">
+                  <div className="post-card">
+                    <div className="frame" style={{
+                      background: `url(${imageFrame} ) no-repeat center center`,
+                      backgroundSize: 'contain',
+                    }}>
+                      <img src="https://umang-react.vercel.app/assets/pic2-BtQTdJ8y.jpg" alt="" /></div>
+
+                    <h4 className='post-title mt-3'>Day Care</h4>
+                    <p className="post-text">
+                      A safe and loving environment for children while parents are at work.
+                    </p>
+                    <a href="#" className='btn-link'>Read more</a>
+                  </div>
+                </div>
+                   <div className="px-3">
+                  <div className="post-card">
+                    <div className="frame" style={{
+                      background: `url(${imageFrame} ) no-repeat center center`,
+                      backgroundSize: 'contain',
+                    }}>
+                      <img src="https://umang-react.vercel.app/assets/pic2-BtQTdJ8y.jpg" alt="" /></div>
+
+                    <h4 className='post-title mt-3'>Nursery</h4>
+                    <p className="post-text">
+                 Nurturing independence and joyful learning.
+                    </p>
+                    <a href="#" className='btn-link'>Read more</a>
+                  </div>
+                </div>
+              </Slider>
             </div>
           </div>
         </Container>

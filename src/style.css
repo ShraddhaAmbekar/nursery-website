@@ -41,14 +41,16 @@
   background: var(--light-text);
   padding: 20px 0;
   transition: all 0.4s ease;
-  position: sticky;
+position: fixed;
   top: 0;
   z-index: 999;
+   
 }
+
 
 .main-navbar.scrolled {
   padding: 12px 0;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
 .logo {
@@ -67,7 +69,6 @@
   font-weight: 600;
   font-family: Poppins;
   transition: all 0.3s ease;
-   
 }
 
 .navbar-nav .nav-link:hover {

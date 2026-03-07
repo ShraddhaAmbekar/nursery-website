@@ -15,7 +15,7 @@ const MainNavbar = () => {
   }, []);
 
   return (
-    <Navbar expand="lg" className={`main-navbar ${scrolled ? "scrolled" : ""}`}>
+    <Navbar expand="lg" className={`main-navbar  ${scrolled ? "scrolled" : ""}`}>
       <Container>
   <Navbar.Brand href="/">
   <img
