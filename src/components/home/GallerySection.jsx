@@ -59,30 +59,32 @@ const GallerySection = () => {
                 <div className="slider-container">
                   <Slider {...settings} className="gallery-slider">
                     <div className="gallery-card">
-  <div
-    className="frame"
-    style={{
-      background: `url(${imageFrame}) no-repeat center center`,
-      backgroundSize: "contain",
-    }}
-  > 
-  <div className="overlay">
-      <i className="fa fa-search"></i>
-    </div>
-    <img
-      src="https://umang-react.vercel.app/assets/pic2-BtQTdJ8y.jpg"
-      alt="gallery"
-    />
+                      <div
+                        className="frame"
+                        style={{
+                          background: `url(${imageFrame}) no-repeat center center`,
+                          backgroundSize: "contain",
+                        }}
+                      >
+                        <div className="overlay">
+                          <i className="fa fa-search"></i>
+                        </div>
+                        <img
+                          src="https://umang-react.vercel.app/assets/pic2-BtQTdJ8y.jpg"
+                          alt="gallery"
+                        />
 
-   
-  </div>
-</div>
+
+                      </div>
+                    </div>
                     <div className="gallery-col">
                       <div className="gallery-card">
                         <div className="frame" style={{
                           background: `url(${imageFrame} ) no-repeat center center`,
                           backgroundSize: 'contain',
-                        }}>
+                        }}><div className="overlay">
+                          <i className="fa fa-search"></i>
+                        </div>
                           <img
                             src="https://umang-react.vercel.app/assets/pic2-BtQTdJ8y.jpg"
                             alt="gallery"
@@ -96,7 +98,9 @@ const GallerySection = () => {
                         <div className="frame" style={{
                           background: `url(${imageFrame} ) no-repeat center center`,
                           backgroundSize: 'contain',
-                        }}>
+                        }}><div className="overlay">
+                          <i className="fa fa-search"></i>
+                        </div>
                           <img
                             src="https://umang-react.vercel.app/assets/pic2-BtQTdJ8y.jpg"
                             alt="gallery"

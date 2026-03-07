@@ -154,8 +154,54 @@
 img {
     border-style: none;
     height: auto;
-    max-width: 100%;
+
     vertical-align: middle;
 }
 
 
+/* second section */
+.video-play .popup-youtube {
+    height: 135px;
+    width: 135px;
+    border-radius: 50%;
+    line-height: 135px;
+    font-size: 36px;
+    display: block;
+    text-align: center;
+    color: #000;
+    background-color: #fff000;
+    margin: auto;
+}
+
+
+.about-text h2 {
+    font-family: Poppins, sans-serif;
+    font-weight: 600;
+    line-height: 80px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.section-head h2 {
+    font-size: 50px;
+    line-height: 60px;
+    margin-bottom: 5px;
+}
+.section-head h1, .section-head h2, .section-head h3 {
+    margin-top: 0;
+    font-family: Abhaya Libre, serif;
+}
+@media (max-width: 768px) {
+  
+    .section-head h2 {
+        font-size: 28px;
+        line-height: 40px;
+        margin-bottom: 0;
+    
+}
+    .video-play .popup-youtube {
+        height: 85px;
+        width: 85px;
+        line-height: 85px;
+        margin: 0 auto 10px;
+    }
+}

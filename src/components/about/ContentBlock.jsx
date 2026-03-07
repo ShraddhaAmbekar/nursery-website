@@ -23,7 +23,7 @@ const ContentBlock = () => {
         </div>
         
         </div>
-         <div className="section-divider" style={{ position: "relative",display:'flex', width: "100%", height: "200px", padding: "0", alignItems: "end", zIndex: 2 }}>
+         <div className="section-divider" style={{ position: "relative",display:'flex', width: "100%", height: "0px", padding: "0", alignItems: "end", zIndex: 2 }}>
             <img src={cloludDivider} alt="divider" />
           </div>
         </div>

@@ -7,7 +7,7 @@ const Section3 = () => {
   return (
     <>
    
-    <div className='section3' style={{backgroundImage: `url(${section3}`, backgroundSize: "cover", backgroundPosition: "center center", backgroundAttachment: "fixed" }}>
+    <div className='section3' style={{backgroundImage: `url(${section3}`, backgroundSize: "cover",}}>
    
        <div className="section-divider" style={{position:"relative", zIndex:2}}>
   <img src={divider1} alt="divider"/>
