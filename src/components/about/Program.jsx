@@ -9,7 +9,7 @@ import "swiper/css/pagination";
 
 import imageFrame from "../../assets/image-frame.png"
 
-const Blog = () => {
+const Program = () => {
 
   return (
     <div>
@@ -18,9 +18,9 @@ const Blog = () => {
           <div className="section2-wrapper">
 
             <div className="section-head text-center mb-5">
-              <h2 className="heading">Early Learning Programs</h2>
+              <h2 className="heading">Our Learning Programs</h2>
               <p className="subheading text-center">
-                We have an excellent teacher to child ratio at our Kindergarten to ensure that each child receives the attention he or she needs
+                Programs designed to support every stage of your child’s early learning journey.
               </p>
             </div>
 
@@ -138,4 +138,4 @@ const Blog = () => {
   )
 }
 
-export default Blog
+export default Program
