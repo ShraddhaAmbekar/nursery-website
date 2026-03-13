@@ -10,7 +10,7 @@ const About = () => {
   return (
     <div>
       <ContentBlock/>
-       <Parallex/>
+       <Parallex hero="A Happy Beginning for Lifelong Learning"/>
       <Staff/>
    <Joinus/>
       <Program/>

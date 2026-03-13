@@ -1,0 +1,246 @@
+.page-content {
+    margin-top: 0;
+    padding-bottom: 50px;
+}
+
+.dlab-bnr-inr {
+    height: 300px;
+    background-size: cover;
+    background-position: center center;
+    display: table;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 30px;
+}
+.dlab-bnr-inr {
+    position: relative;
+    z-index: 1;
+}
+
+.dlab-bnr-inr:before {
+    height: 100px;
+    content: "";
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-image: url();
+    z-index: 1;
+    left: 0;
+    -webkit-animation: 45s scrollup infinite linear;
+    -moz-animation: 45s scrollup infinite linear;
+    -o-animation: 45s scrollup infinite linear;
+    -ms-animation: 45s scrollup infinite linear;
+    animation: 45s scrollup infinite linear;
+    background-repeat: repeat-x;
+}
+.dlab-bnr-inr .container {
+    display: table;
+    height: 100%;
+}
+.dlab-bnr-inr-entry {
+    display: table-cell;
+    vertical-align: middle;
+}
+.dlab-bnr-inr h1 {
+    font-weight: 700;
+    font-size: 70px;
+    font-family: Abhaya Libre, serif;
+    margin-bottom: 5px;
+    position: relative;
+    line-height: 70px;
+}
+.dlab-bnr-inr h1:after {
+    content: attr(data-name);
+    font-size: 160px;
+    letter-spacing: 10px;
+    opacity: .2;
+    position: absolute;
+    top: 113px;
+    z-index: -1;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.dlab-bnr-inr .breadcrumb-row {
+    padding: 0;
+    background-color: #0000;
+}
+.breadcrumb-row ul {
+    margin: 0;
+}
+ul[class*=list-] {
+    font-size: 15px;
+}
+.list-unstyled, .list-inline {
+    padding-left: 0;
+    list-style: none;
+}
+.breadcrumb-row ul li {
+    padding: 0;
+    margin-right: 3px;
+    color: #fff;
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.dlab-bnr-inr .breadcrumb-row ul li a {
+    color: #fff;
+}
+
+.icon-content {
+    overflow: hidden;
+}
+
+.icon-bx-wraper .dlab-tilte {
+    margin-top: 0;
+}
+
+.dlab-box, .dlab-info, .dlab-tilte, .dlab-tilte-inner {
+    position: relative;
+}
+h4{
+  font-size: 22px;
+    line-height: 32px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+.ptag {
+font-size: 16px;
+    line-height: 24px;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    color: #3f3f3f;
+}
+.form-group {
+    margin-bottom: 25px;
+}
+.contact-box .form-control {
+    background-color: #c4eafb;
+    border: 2px solid #c4eafb;
+    height: 60px;
+    border-radius: 6px;
+    padding: 20px;
+    font-size: 16px;
+    font-weight: 300;
+}
+a, .dlab-box, .btn, .form-control, .overlay-bx, .overlay-icon li a i, .icon-bx-xl, .icon-bx-lg, .icon-bx-md, .icon-bx-sm, .icon-bx-xs, .share-social-bx li, .indicator, .profile-menu ul li, .staff-member .member-done, .how-dlab-work .dlab-box .shadow-bx img, .how-dlab-work .dlab-box .step-no-bx, .dlab-info-has, .dlab-we-find .dlab-box, .navbar-toggler, .logo-header, .header-nav .nav>li>a, .extra-nav, .skew-secondry:hover, .skewbg--bg-color:hover, .skew-secondry:hover:after, .skewbg--bg-color:hover:after {
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -ms-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear;
+}
+.form-control {
+    border-color: #e1e6eb;
+    box-shadow: none;
+    height: 40px;
+    font-size: 13px;
+    line-height: 20px;
+    padding: 9px 12px;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--bs-body-color);
+    background-color: var(--bs-body-bg);
+    background-clip: padding-box;
+    border: var(--bs-border-width) solid var(--bs-border-color);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: var(--bs-border-radius);
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+button, input, optgroup, select, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+/* =========================
+   TABLET DEVICES
+========================= */
+@media (max-width: 992px){
+
+  .dlab-bnr-inr{
+    height: 250px;
+    padding-bottom:20px;
+  }
+
+  .dlab-bnr-inr h1{
+    font-size:50px;
+    line-height:55px;
+  }
+
+  .dlab-bnr-inr h1:after{
+    font-size:110px;
+    top:90px;
+  }
+
+}
+
+
+/* =========================
+   MOBILE DEVICES
+========================= */
+@media (max-width:768px){
+
+  .dlab-bnr-inr{
+    height:auto;
+    padding:60px 0;
+  }
+
+  .dlab-bnr-inr h1{
+    font-size:38px;
+    line-height:42px;
+  }
+
+  .dlab-bnr-inr h1:after{
+    font-size:70px;
+    top:70px;
+  }
+
+  .breadcrumb-row ul li{
+    font-size:12px;
+  }
+
+  .contact-box .form-control{
+    height:50px;
+    padding:15px;
+  }
+
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+@media (max-width:480px){
+
+  .dlab-bnr-inr h1{
+    font-size:28px;
+    line-height:32px;
+  }
+
+  .dlab-bnr-inr h1:after{
+    font-size:50px;
+    letter-spacing:5px;
+    top:60px;
+  }
+
+  h4{
+    font-size:18px;
+    line-height:26px;
+  }
+
+  .ptag{
+    font-size:14px;
+    line-height:20px;
+  }
+
+}

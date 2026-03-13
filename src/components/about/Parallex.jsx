@@ -3,7 +3,7 @@ import divider1 from '../../assets/line-divider.png'
 import divider2 from '../../assets/line-divider2.png'
 import section3 from '../../assets/section3.webp'
 
-const Parallex = () => {
+const Parallex = ({hero}) => {
   return (
     <div>
         <div className="childern-box">
@@ -22,7 +22,7 @@ const Parallex = () => {
                 <div className="row py-5">
                   <div className="col-lg-6 col-md-12 col-sm-12 col-12">
                     <div className="section-head">
-                      <h2 className="cold-heading">A Happy Beginning for Lifelong Learning</h2>
+                      <h2 className="cold-heading">{hero}</h2>
                       <p className="cold-subheading">At Humming Kitez, we inspire curiosity, creativity, and confidence through joyful, play-based learning in a safe and caring environment.</p>
                     </div>
                   </div>
