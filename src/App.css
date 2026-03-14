@@ -76,15 +76,15 @@ body {
 
 /* Background Images */
 .slide1 {
-  background-image: url("/src/assets/hero1.webp");
+  background-image: url("/images/hero1.webp");
 }
 
 .slide2 {
-  background-image: url("/src/assets/hero2.webp");
+  background-image: url("/images/hero2.webp");
 }
 
 .slide3 {
-  background-image: url("/src/assets/hero3.webp");
+  background-image: url("/images/hero3.webp");
 }
 
 /* ==========================================
@@ -103,31 +103,12 @@ body {
   display: flex !important;
 }
 
-
-/* Tablet */
-@media (max-width: 992px) {
-
-  .slide1{
-    height: 60vh;
-    background-position:80% 40%;
-  }
-
-  .slide2{
-        height: 60vh;
-            background-position: 20% 20%;
-  }
-  .slide3 {
-    height: 60vh;
-    background-position:right;
-  }
-}
-
 @media (max-width: 768px) {
 
   .hero-slider .slick-prev,
   .hero-slider .slick-next {
     top: auto;
-    bottom: 0px; 
+    bottom: 50px; 
       /* arrow vertical position */
   }
 
@@ -140,16 +121,39 @@ body {
     right: 40% !important;
     transform: translateX(50%);
   }
+  
+.slide1,
+.slide2,
+.slide3 {
+align-items:start;
+min-height: 70vh;
+ }
+
+.slide1 {
+  background-image: url("/images/heromob1.jpeg");
+   background-size: cover;
+    background-position: center bottom;
+  background-repeat: no-repeat;
+  
+}
+
+.slide2 {
+  background-image: url("/images/heromob2.jpeg");
+    background-size: cover;
+   background-position: center bottom;
+  background-repeat: no-repeat;
+}
+
+.slide3 {
+  background-image: url("/images/heromob3.jpeg");
+    background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+}
 
 }
 /* Light overlay like template */
-.hero-slide::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: var(--light);
-  opacity: 0.1;
-}
+
 
 .hero-content {
   position: relative;
@@ -186,7 +190,6 @@ body {
   line-height: 30px;
   font-family: Poppins;
 }
-
 /* ==========================================
    SLICK DOTS (Pink Small Circles)
 ========================================== */
@@ -787,7 +790,6 @@ body {
   border-color: initial;
   border-image: initial;
   padding: 0px;
-
 }
 
 /* footer */
@@ -1014,7 +1016,9 @@ body {
   color: #555;
 }
 @media (max-width:768px){
-
+.main-navbar {
+  padding:0px 0px
+}
 .hero-wrapper{
   flex-direction: column;
   text-align: center;
@@ -1129,6 +1133,8 @@ body {
     background-size: cover;
             background-attachment: unset;
   }
+
+  
 }@media(max-width:576px){
 
 .hero-left h2{
@@ -1139,6 +1145,7 @@ body {
 .dark-text{
   font-size:14px;
   line-height:22px;
+  margin-bottom:10px
 }
 
 }
@@ -1148,9 +1155,8 @@ body {
   }
 
   .hero-slide {
-    min-height: min-content;
-    height: min-content;
-    padding: 60px 20px;
+  
+    padding: 0px 20px;
     margin-bottom: 10px;
   }
 

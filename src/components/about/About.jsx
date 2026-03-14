@@ -9,12 +9,11 @@ import Program from './Program'
 const About = () => {
   return (
     <div>
-      <ContentBlock/>
-       <Parallex hero="A Happy Beginning for Lifelong Learning"/>
-      <Staff/>
-   <Joinus/>
-      <Program/>
-
+      <ContentBlock />
+      <Parallex hero="A Happy Beginning for Lifelong Learning" />
+      <Staff />
+      <Joinus />
+      <Program />
     </div>
   )
 }
