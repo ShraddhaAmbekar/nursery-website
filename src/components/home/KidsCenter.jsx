@@ -4,7 +4,7 @@ const KidsCenter = () => {
 
   return (
     <>
-      <section className="section2 pt-5">
+      <section className="section2 pt-5 pb-5">
         <Container>
           <div className="section2-wrapper">
             <div className="section-head text-center my-5">
@@ -14,37 +14,69 @@ const KidsCenter = () => {
 
             <div>
               <section className="feature-section">
-                <div className="row">
+                 <div className="row">
+      
+      <div className="col-lg-3 col-md-6 col-sm-6 col-12">
+        <div className="icon-bx-wraper sr-iconbox m-b20">
+          <div className="icon-lg m-b20">
+            <a className="icon-cell" href="/">
+              <img src="/images/icon1.png" alt="Creative Thinking" />
+            </a>
+          </div>
+          <div className="icon-content">
+            <h6 className="dlab-tilte">
+             Explore
+            </h6>
+          </div>
+        </div>
+      </div>
 
-                  <div className="col-lg-3 col-md-6 col-sm-12">
-                    <div className="feature-card">
-                      <img src="https://up.yimg.com/ib/th/id/OIP.a9gpuq57wkfLRucnnEBR4AHaF1?pid=Api&rs=1&c=1&qlt=95&w=139&h=109" alt="" />
-                      <h6>Explore</h6>
-                    </div>
-                  </div>
+      <div className="col-lg-3 col-md-6 col-sm-6 col-12">
+        <div className="icon-bx-wraper sr-iconbox m-b20">
+          <div className="icon-lg m-b20">
+            <a className="icon-cell" href="/">
+              <img src="/images/icon2.png" alt="Emotions" />
+            </a>
+          </div>
+          <div className="icon-content">
+            <h6 className="dlab-tilte">
+             Imagine
+            </h6>
+          </div>
+        </div>
+      </div>
 
-                  <div className="col-lg-3 col-md-6 col-sm-12">
-                    <div className="feature-card">
-                      <img src="https://up.yimg.com/ib/th/id/OIP.a9gpuq57wkfLRucnnEBR4AHaF1?pid=Api&rs=1&c=1&qlt=95&w=139&h=109" alt="" />
-                      <h6>Imagin</h6>
-                    </div>
-                  </div>
+      <div className="col-lg-3 col-md-6 col-sm-6 col-12">
+        <div className="icon-bx-wraper sr-iconbox m-b20">
+          <div className="icon-lg m-b20">
+            <a className="icon-cell" href="/">
+              <img src="/images/icon3.png" alt="Independent" />
+            </a>
+          </div>
+          <div className="icon-content">
+            <h6 className="dlab-tilte">
+            Think
+            </h6>
+          </div>
+        </div>
+      </div>
 
-                  <div className="col-lg-3 col-md-6 col-sm-12">
-                    <div className="feature-card">
-                      <img src="https://up.yimg.com/ib/th/id/OIP.a9gpuq57wkfLRucnnEBR4AHaF1?pid=Api&rs=1&c=1&qlt=95&w=139&h=109" alt="" />
-                      <h6>Think</h6>
-                    </div>
-                  </div>
+      <div className="col-lg-3 col-md-6 col-sm-6 col-12">
+        <div className="icon-bx-wraper sr-iconbox m-b20">
+          <div className="icon-lg m-b20">
+            <a className="icon-cell" href="/">
+              <img src="/images/icon4.png" alt="Knowledge" />
+            </a>
+          </div>
+          <div className="icon-content">
+            <h6 className="dlab-tilte">
+              Learn
+            </h6>
+          </div>
+        </div>
+      </div>
 
-                  <div className="col">
-                    <div className="feature-card">
-                      <img src="https://up.yimg.com/ib/th/id/OIP.a9gpuq57wkfLRucnnEBR4AHaF1?pid=Api&rs=1&c=1&qlt=95&w=139&h=109" alt="sldfa" />
-                      <h6>Create</h6>
-                    </div>
-                  </div>
-
-                </div>
+    </div>
               </section>
             </div>
           </div>

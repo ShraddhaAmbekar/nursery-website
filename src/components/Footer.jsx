@@ -19,11 +19,7 @@ const Footer = () => {
           </div>
 
           <p className="footer-text">
-            Lorem Ipsum Dolor Sit Amet,
-            Consectetur At Adipisicing Elit,
-            Sed Do Eiusmod Tempor Incididunt Ut
-            Labore Et Dolore Magna The Are
-            Aliqua.
+           A joyful space where little learners explore, create, and grow with confidence through play-based early education.
           </p>
         </div>
 
@@ -33,36 +29,35 @@ const Footer = () => {
         <div className="d-flex ">
             <ul>
             <li><a href="/">HOME</a></li>
-            <li><a href="/faq">FAQ</a></li>
-            <li><a href="/blog">BLOG</a></li>
-            <li><a href="/classes">CLASSES</a></li>
-            </ul>
-            <ul>
-            <li>ABOUT</li>
-            <li>EVENT</li>
-            <li>GALLERY</li>
-            <li>CONTACT</li>
+            <li><a href="/">ABOUT</a></li><li>
+              <a href="/">PROGRAM</a></li>
+              <li><a href="/">CONTACT</a></li>
+            
+        
+            
+      
           </ul>
         </div>
         </div>
 
         {/* Recent Posts */}
         <div className="footer-col recent">
-          <h5>RECENT POSTS</h5>
+          <h5>GET IN TOUCH</h5>
 
           <div className="recent-item">
-            <img src="" alt="1" />
+         
             <div>
-              <h6>What It's Like Dating.</h6>
-              <p>BY JONE | 💬 28</p>
+              <h6>EMAIL:
+              </h6>
+              <p>hummingkitez@gmail.com</p>
             </div>
           </div>
 
           <div className="recent-item">
-            <img src="" alt="2" />
+        
             <div>
-              <h6>The Reasons Why We Love</h6>
-              <p>BY MARRY | 💬 5</p>
+              <h6>Call Us</h6>
+              <p>+91 9911255302</p>
             </div>
           </div>
         </div>
@@ -89,7 +84,7 @@ const Footer = () => {
         <div className="float-btn">🛒</div> 
       </div> */}
 
-     <div className="footer-bottom"><div className="container"><div className="row"><div className="col-lg-6 col-md-8 col-sm-6 text-left "> <span>Copyright © 2026 Humming Kitez. All right reserved</span> </div>
+     <div className="footer-bottom"><div className="container"><div className="row"><div className="col-lg-6 col-md-8 col-sm-6 text-left "> <span>Copyright © 2026 Humming Kitez Preschool. All right reserved</span> </div>
      <div className="col-lg-6 col-md-4 col-sm-6 text-right ">
       <ul className="list-inline"><li>
         <a className="btn-link facebook circle me-1" href="/" data-discover="true"><i className="fa fa-facebook"></i></a></li>
