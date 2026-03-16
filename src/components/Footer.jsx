@@ -1,4 +1,5 @@
-import divider1 from '../assets/line-divider.png'
+import divider1 from '../assets/line-divider.png' 
+import logo from '../assets/logo.png'
 
 const Footer = () => {
   return (
@@ -13,8 +14,8 @@ const Footer = () => {
 
         {/* Logo Section */}
         <div className="footer-col about">
-          <div className="footer-logo">
-            <img src="/assets/logo.png" alt="logo" />
+          <div >
+            <img className="footer-logo" src={logo} alt="logo" />
           </div>
 
           <p className="footer-text">
@@ -50,7 +51,7 @@ const Footer = () => {
           <h5>RECENT POSTS</h5>
 
           <div className="recent-item">
-            <img src="/assets/kid1.jpg" alt="" />
+            <img src="" alt="1" />
             <div>
               <h6>What It's Like Dating.</h6>
               <p>BY JONE | 💬 28</p>
@@ -58,7 +59,7 @@ const Footer = () => {
           </div>
 
           <div className="recent-item">
-            <img src="/assets/kid2.jpg" alt="" />
+            <img src="" alt="2" />
             <div>
               <h6>The Reasons Why We Love</h6>
               <p>BY MARRY | 💬 5</p>

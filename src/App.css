@@ -1221,3 +1221,7 @@ min-height: 70vh;
   visibility: visible;
   opacity: 0.5;
 }
+.footer-logo{
+    height: 100px;
+  width: auto;
+}
