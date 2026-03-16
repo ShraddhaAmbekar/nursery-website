@@ -1,13 +1,13 @@
 import React from 'react'
 import divider1 from '../../assets/line-divider.png'
 import divider2 from '../../assets/line-divider2.png'
-import aboutimg from '../../assets/aboutus.webp'
+import section3 from '../../assets/section3.webp'
 
 const Section3 = () => {
   return (
     <>
 
-      <div className='section3' style={{ backgroundImage: `url(${aboutimg}`, backgroundSize: "cover", }}>
+      <div className='section3' style={{ backgroundImage: `url(${section3}`, backgroundSize: "cover", }}>
 
         <div className="section-divider" style={{ position: "relative", zIndex: 2 }}>
           <img src={divider1} alt="divider" />

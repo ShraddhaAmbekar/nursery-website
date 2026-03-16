@@ -35,6 +35,11 @@ const GallerySection = () => {
   return (
     <section className="section2 mt-5">
       <Container fluid>
+ 
+   <div className="section-head text-center my-5">
+              <h2 className="heading">Gallery of Our classes</h2>
+              <p className="subheading text-center"> Our activities encourage exploration, creativity, and problem-solving while making learning fun.</p>
+            </div>
 
         <div className="slider-container position-relative">
 

@@ -88,7 +88,7 @@ const Footer = () => {
         <div className="float-btn">🛒</div> 
       </div> */}
 
-     <div className="footer-bottom"><div className="container"><div className="row"><div className="col-lg-6 col-md-8 col-sm-6 text-left "> <span>Copyright © 2025 Umang Academy. All right reserved</span> </div>
+     <div className="footer-bottom"><div className="container"><div className="row"><div className="col-lg-6 col-md-8 col-sm-6 text-left "> <span>Copyright © 2026 Humming Kitez. All right reserved</span> </div>
      <div className="col-lg-6 col-md-4 col-sm-6 text-right ">
       <ul className="list-inline"><li>
         <a className="btn-link facebook circle me-1" href="/" data-discover="true"><i className="fa fa-facebook"></i></a></li>
