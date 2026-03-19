@@ -192,7 +192,7 @@ useEffect(() => {
               onChange={handleChange}
               className="cute-input"
             >
-              <option value="">🎓 Select Class</option>
+              <option value="">🎓 Select Program</option>
               <option>Nursery</option>
               <option>LKG</option>
               <option>UKG</option>
