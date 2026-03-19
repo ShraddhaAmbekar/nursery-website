@@ -7,7 +7,7 @@ const Dream = () => {
         <div className="container">
           <div className="row">
 
-            <div className="col-lg-7 col-md-12 col-sm-12 col-12 left-content">
+            <div className="col-lg-7 col-md-12 col-sm-12 col-12 left-content pb-4">
               <h2 className='heading'>
                 About Humming Kitez
               </h2>
@@ -37,11 +37,11 @@ const Dream = () => {
 
               <div className="info-card">
                 <h3 className="info-card-heading">Play-Based Learning</h3>
-                <p className="subheading">A secure and caring space where children feel comfortable, confident, and happy.</p>
+                <p className="subheading">Fun activities and interactive learning that help children explore and understand the world naturally.</p>
               </div>
                <div className="info-card">
-                <h3 className="info-card-heading">Play-Based Learning</h3>
-                <p className="subheading">A secure and caring space where children feel comfortable, confident, and happy.</p>
+                <h3 className="info-card-heading">Focus on Confidence and Creativity</h3>
+                <p className="subheading">Helping children develop independence, curiosity, and strong communication skills from an early age.</p>
               </div>
             </div>
           </div></div>

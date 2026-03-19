@@ -1,5 +1,7 @@
 import divider1 from '../assets/line-divider.png' 
 import logo from '../assets/logo.png'
+import {FaFacebook, FaInstagramSquare, FaLinkedin} from "react-icons/fa";
+
 
 const Footer = () => {
   return (
@@ -86,9 +88,16 @@ const Footer = () => {
 
      <div className="footer-bottom"><div className="container"><div className="row"><div className="col-lg-6 col-md-8 col-sm-6 text-left "> <span>Copyright © 2026 Humming Kitez Preschool. All right reserved</span> </div>
      <div className="col-lg-6 col-md-4 col-sm-6 text-right ">
-      <ul className="list-inline"><li>
-        <a className="btn-link facebook circle me-1" href="/" data-discover="true"><i className="fa fa-facebook"></i></a></li>
-        <li><a className="btn-link google-plus circle me-1" href="/" data-discover="true"><i className="fa fa-google-plus"></i></a></li><li><a className="btn-link linkedin circle me-1" href="/" data-discover="true"><i className="fa fa-linkedin"></i></a></li><li><a className="btn-link instagram circle" href="/" data-discover="true"><i className="fa fa-instagram"></i></a></li></ul></div></div></div></div>
+<div className="social-icons">
+  <a href="#"><FaFacebook /></a>
+  <a href="#"><FaInstagramSquare /></a>
+  <a href="#"><FaLinkedin /></a>
+</div>
+      
+        </div>
+        </div>
+        </div>
+        </div>
 
     </footer>
   );

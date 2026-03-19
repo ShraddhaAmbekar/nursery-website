@@ -1,6 +1,5 @@
 import aboutTitle from "../../assets/about-title.jpg";
 import aboutbg1 from "../../assets/about-bg1.png"
-import about1 from "../../assets/about1-img.jpg"
 import Parallex from "../about/Parallex";
 import Staff from "../home/Staff";
 import Joinus from "../about/Joinus";
@@ -54,7 +53,7 @@ const LowerKg = () => {
                 </div>
               </div>
               <div className="col-lg-4 col-md-6 col-sm-12 m-b30 d-md-none d-lg-block d-sm-none " >
-                <img src={about1} alt="about1" className='about1img' />
+                <img src="/images/icon22.png" alt="about1" className='about1img' />
               </div>
               <div className="col-lg-4 col-md-6 col-sm-12">
                 <div className="icon-bx-wraper left m-b30 about-iconbx">

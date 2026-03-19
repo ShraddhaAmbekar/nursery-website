@@ -54,7 +54,7 @@ const UpperKg = () => {
                 </div>
               </div>
               <div className="col-lg-4 col-md-6 col-sm-12 m-b30 d-md-none d-lg-block d-sm-none " >
-                <img src={about1} alt="about1" className='about1img' />
+                <img src="/images/icon23.png" alt="about1" className='about1img' />
               </div>
               <div className="col-lg-4 col-md-6 col-sm-12">
                 <div className="icon-bx-wraper left m-b30 about-iconbx">

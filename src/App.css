@@ -4,7 +4,8 @@
 :root {
 
   /* --primary: #ed5ab0; */
-  --primary: #F9A82F;
+  --primary: linear-gradient(45deg, #F9A82F, #ffcc00);
+  --primary-text:#F9A82F;
   /* --secondary: #3d56f0; */
   --secondary: #2F7F9D;
   ;
@@ -36,7 +37,7 @@ body {
     margin: 0;
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
-    font-smoothing: antialiased;
+  
 }
 .logo-img {
   height: 80px;
@@ -108,7 +109,7 @@ body {
   .hero-slider .slick-prev,
   .hero-slider .slick-next {
     top: auto;
-    bottom: 50px; 
+    bottom: 10px; 
       /* arrow vertical position */
   }
 
@@ -130,7 +131,7 @@ min-height: 70vh;
  }
 
 .slide1 {
-  background-image: url("/images/heromob1.jpeg");
+  background-image: url("/images/heromob3.jpeg");
    background-size: cover;
     background-position: center bottom;
   background-repeat: no-repeat;
@@ -145,7 +146,7 @@ min-height: 70vh;
 }
 
 .slide3 {
-  background-image: url("/images/heromob3.jpeg");
+  background-image: url("/images/heromob4.jpeg");
     background-size: cover;
   background-position: center bottom;
   background-repeat: no-repeat;
@@ -216,7 +217,7 @@ min-height: 70vh;
   font-size: 15px;
   font-weight: 600;
   color: var(--light);
-  background-color: var(--primary);
+  background: var(--primary);
   border-radius: 40px;
   text-decoration: none;
   transition: all 0.4s ease;
@@ -250,9 +251,6 @@ min-height: 70vh;
   font-size: 20px;
   color: var(--light);
 }
-
-
-
 
 /* ================================
    FLOATING IMAGE
@@ -300,7 +298,6 @@ min-height: 70vh;
 /* ==========================================
    MAIN NAVBAR
 ========================================== */
-
 .main-navbar {
   background: var(--light-bg);
   padding: 18px 0;
@@ -315,19 +312,7 @@ min-height: 70vh;
   box-shadow: 0 8px 30px #0000000d;
 }
 
-.logo {
-  font-size: 28px;
-  font-weight: 600;
-}
-
-.logo-blue {
-  color: var(--secondary);
-}
-
-.logo-pink {
-  color: var(--primary);
-}
-
+/* Button */
 .main-btn {
   padding: 10px 30px;
   border-radius: 40px;
@@ -344,6 +329,7 @@ min-height: 70vh;
   box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
 }
 
+/* Nav Links */
 .navbar-nav .nav-link {
   font-size: 14px;
   font-weight: 600;
@@ -351,37 +337,13 @@ min-height: 70vh;
   font-family: "Poppins", sans-serif;
   position: relative;
   color: var(--dark-gray);
-
 }
 
-/* Hover color */
 .navbar-nav .nav-link:hover {
   color: var(--primary);
 }
 
-
-/* ==========================================
-   DROPDOWN (Professional)
-========================================== */
-
-.nav-item-dropdown {
-  position: relative;
-}
-
-.dropdown-title {
-  cursor: pointer;
-}
-
-.nav-item-dropdown {
-  position: relative;
-}
-
-/* Wrapper */
-.custom-program-dropdown {
-  position: relative;
-}
-
-/* Dropdown Box */
+/* Dropdown */
 .custom-program-dropdown .dropdown-menu {
   background-color: var(--light-bg);
   border: 3px solid var(--secondary);
@@ -393,7 +355,6 @@ min-height: 70vh;
   transition: all 0.3s ease;
 }
 
-/* Dropdown Items */
 .custom-program-dropdown .dropdown-item {
   font-weight: 500;
   font-size: 14px;
@@ -401,16 +362,12 @@ min-height: 70vh;
   transition: 0.3s;
 }
 
-/* Hover Effect */
 .custom-program-dropdown .dropdown-item:hover {
-  padding-left: 28px;
-  background: transparent;
+ font-weight: bold;
+
 }
 
-/* ==========================================
-   MOBILE RESPONSIVE
-========================================== */
-
+/* Remove toggle border */
 .navbar-toggler {
   border: none;
 }
@@ -419,20 +376,10 @@ min-height: 70vh;
   box-shadow: none;
 }
 
-
-  @media (min-width: 992px) {
-    .nav-item-dropdown:hover .custom-dropdown {
-      opacity: 1;
-      visibility: visible;
-      transform: translateY(0);
-    }
-  
-
-  .topbar-inner {
-    flex-direction: column;
-    gap: 5px;
-    text-align: center;
-  }
+/* ==========================================
+   MOBILE RESPONSIVE (FIXED)
+========================================== */
+@media (max-width: 991px) {
 
   .navbar-nav {
     background: var(--light);
@@ -445,27 +392,24 @@ min-height: 70vh;
     padding: 12px 0;
   }
 
-  .navbar-nav .nav-link::after {
-    display: none;
-  }
-
   .nav-btn {
     margin-top: 15px;
     margin-left: 0;
     display: inline-block;
   }
 
-  /* Mobile dropdown fix */
-  .custom-dropdown {
+  /* Fix dropdown inside mobile */
+  .custom-program-dropdown .dropdown-menu {
     position: static;
     box-shadow: none;
-    transform: none;
-    opacity: 1;
-    visibility: visible;
-    padding-left: 15px;
+    border: none;
+    margin-top: 5px;
+    padding-left: 10px;
   }
+  .navbar-collapse {
+  transition: all 0.3s ease;
 }
-
+}
 /* section2 */
 .dream-section {
   background: url("/src/assets/dream-bg.png") no-repeat center center/contain;
@@ -540,7 +484,7 @@ min-height: 70vh;
 .info-card-heading {
   margin-top: 0;
   font-size: 25px;
-  color: var(--primary);
+  color: var(--primary-text);
   margin-bottom: 0px;
   line-height: 28px;
   font-family: Abhaya Libre, serif;
@@ -607,18 +551,11 @@ min-height: 70vh;
 
 }
 
-
-
-/* Column */
-
-
 /* Card */
 .gallery-card {
   text-align: center;
 
 }
-
-
 
 .dlab-media:after {
   background-color: #191c0a;
@@ -918,8 +855,6 @@ min-height: 70vh;
   color: #000;
 }
 
-
-
 .recent-item h6 {
   font-size: 15px;
   color: #000
@@ -929,7 +864,6 @@ min-height: 70vh;
   padding: 0;
   display: inline-block;
   color: var(--secondary);
-  font-weight: 600;
   font-size: 15px;
 
 }
@@ -1113,7 +1047,6 @@ min-height: 70vh;
 }
 
 @media (max-width: 992px) {
-
   .hero-left {
     max-width: 100%;
   }
@@ -1242,4 +1175,72 @@ min-height: 70vh;
     height: 100px;
 
   width: auto;
+}
+.cute-input {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 12px;
+  border: 2px solid #2F7F9D;
+  font-size: 14px;
+}
+
+.cute-input:focus {
+  border-color: #F9A82F;
+  box-shadow: 0 0 6px #F9A82F;
+}
+
+.cute-btn {
+  width: 100%;
+  margin-top: 15px;
+  background: linear-gradient(45deg, #F9A82F, #ffcc00);
+  border: none;
+  padding: 12px;
+  border-radius: 15px;
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* playful icons */
+.cute-btn:hover {
+  transform: scale(1.05);
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  justify-content: end;
+}
+
+.social-icons a {
+  background: #ffe4ec; /* soft pink */
+  padding: 12px;
+  border-radius: 50%;
+  font-size: 22px;
+  color: #ff6b81;
+  transition: all 0.3s ease;
+}
+
+/* Different colors for each */
+.social-icons a:nth-child(1) {
+  background: #e3f2fd;
+  color: #1877f2; /* Facebook blue */
+}
+
+.social-icons a:nth-child(2) {
+  background: #fff0f5;
+  color: #e1306c; /* Instagram pink */
+}
+
+.social-icons a:nth-child(3) {
+  background: #e0f7fa;
+  color: #0077b5; /* LinkedIn blue */
+}
+
+/* Hover effect */
+.social-icons a:hover {
+  transform: scale(1.2) rotate(8deg);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }

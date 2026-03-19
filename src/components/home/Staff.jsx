@@ -13,7 +13,7 @@ const StaffSection = () => {
       <Container>
         <div className="section2-wrapper">
 
-          <div className="section-head text-center mb-5">
+          <div className="section-head text-center">
             <h2 className="heading">Meet Our Amazing Teachers.</h2>
             <p className="subheading text-center">
               A passionate team dedicated to ensure every child gets the care and guidance they deserve.

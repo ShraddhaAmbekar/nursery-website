@@ -27,7 +27,7 @@ const Nursery = () => {
           backgroundPosition: "center"
         }}>
           <div className="container">
-            <div className="row p-5">
+            <div className="row p-1">
               <div className="col-lg-12 col-md-12 col-sm-12">
                 <div className="section-head text-center">
                   <h2 className="heading">Nursery</h2>
@@ -56,7 +56,7 @@ const Nursery = () => {
                 </div>
               </div>
               <div className="col-lg-4 col-md-6 col-sm-12 m-b30 d-md-none d-lg-block d-sm-none " >
-                <img src={about1} alt="about1" className='about1img' />
+                <img src="/images/icon21.png" alt="about1" className='about1img' />
               </div>
               <div className="col-lg-4 col-md-6 col-sm-12">
                 <div className="icon-bx-wraper left m-b30 about-iconbx">

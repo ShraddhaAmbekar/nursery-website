@@ -36,7 +36,7 @@ const GallerySection = () => {
     <section className="section2 mt-5">
       <Container fluid>
  
-   <div className="section-head text-center my-5">
+   <div className="section-head text-center">
               <h2 className="heading">Gallery of Our classes</h2>
               <p className="subheading text-center"> Our activities encourage exploration, creativity, and problem-solving while making learning fun.</p>
             </div>
