@@ -102,7 +102,7 @@ useEffect(() => {
       {/*  HEADER */}
       <TopBar />
       <MainNavbar />
-
+<ScrollToTop/>
       {/*  ROUTES */}
       <Routes>
       
