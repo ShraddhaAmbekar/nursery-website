@@ -39,17 +39,17 @@ const App = () => {
   const [errors, setErrors] = useState({});
 
   // ✅ Scroll trigger
-useEffect(() => {
-  const handleScroll = () => {
-    if (!hasShown && window.scrollY > 500) {
-      setShowModal(true);
-      setHasShown(true);
-    }
-  };
+  useEffect(() => {
+    const handleScroll = () => {
+      if (!hasShown && window.scrollY > 200) {
+        setShowModal(true);
+        setHasShown(true);
+      }
+    };
 
-  window.addEventListener("scroll", handleScroll);
-  return () => window.removeEventListener("scroll", handleScroll);
-}, [hasShown]);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [hasShown]);
 
   // ✅ Handle input change
   const handleChange = (e) => {
@@ -102,10 +102,10 @@ useEffect(() => {
       {/*  HEADER */}
       <TopBar />
       <MainNavbar />
-<ScrollToTop/>
+      <ScrollToTop />
       {/*  ROUTES */}
       <Routes>
-      
+
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<ContactUs />} />
@@ -119,92 +119,73 @@ useEffect(() => {
       <Footer />
 
       {/*  CUTE POPUP MODAL */}
-      <Modal
-        isOpen={showModal}
-        onRequestClose={() => setShowModal(false)}
-        style={{
-    overlay: { backgroundColor: "rgba(0,0,0,0.5)" },
-    content: {
-      top: "55%",
-      left: "50%",
-      transform: "translate(-50%, -50%)",
-      width: "450px",
-     height:"50vh",
-      maxHeight: "80vh",  
-      overflowY: "auto", 
-      borderRadius: "20px",
-      padding: "25px",
-      border: "4px solid #F9A82F",
-      background: "linear-gradient(135deg, #fff7e6, #e6f7ff)",
-      position:"relative",
-      zIndex:9999
-    }
-  }}
+    <Modal
+  isOpen={showModal}
+  onRequestClose={() => setShowModal(false)}
+  className="custom-modal"
+  overlayClassName="custom-overlay"
+>
+  <div className="modal-content-wrapper">
+    
+    <button
+      onClick={() => setShowModal(false)}
+      className="close-btn"
+    >
+      ✖
+    </button>
+
+    <h2 className="modal-title">🎈 Admission Form</h2>
+    <p className="modal-subtitle">Fill & Join Our Happy School 😊</p>
+
+    <form onSubmit={handleSubmit} className="modal-form">
+
+      <input
+        name="name"
+        value={formData.name}
+        placeholder="👦 Student Name"
+        onChange={handleChange}
+        className="cute-input"
+      />
+      {errors.name && <span className="error">{errors.name}</span>}
+
+      <input
+        name="phone"
+        value={formData.phone}
+        placeholder="📱 Phone Number"
+        onChange={handleChange}
+        className="cute-input"
+      />
+      {errors.phone && <span className="error">{errors.phone}</span>}
+
+      <input
+        name="email"
+        value={formData.email}
+        placeholder="📧 Email"
+        onChange={handleChange}
+        className="cute-input"
+      />
+      {errors.email && <span className="error">{errors.email}</span>}
+
+      <select
+        name="admission"
+        value={formData.admission}
+        onChange={handleChange}
+        className="cute-input"
       >
-        <div style={{ textAlign: "center" }}>
-          <button
-            onClick={() => setShowModal(false)}
-            style={{
-              float: "right",
-              border: "none",
-              background: "none",
-              fontSize: "18px"
-            }}
-          >
-            ✖
-          </button>
+        <option value="">🎓 Select Program</option>
+        <option>Nursery</option>
+        <option>LKG</option>
+        <option>UKG</option>
+        <option>Day Care</option>
+      </select>
+      {errors.admission && <span className="error">{errors.admission}</span>}
 
-          <h2 style={{ color: "#2F7F9D" }}>🎈 Admission Form</h2>
-          <p>Fill & Join Our Happy School 😊</p>
+      <button className="cute-btn">🚀 Submit</button>
+    </form>
 
-          <form onSubmit={handleSubmit}>
-
-            <input
-              name="name"
-              value={formData.name}
-              placeholder="👦 Student Name"
-              onChange={handleChange}
-              className="cute-input"
-            />
-            {errors.name && <span>{errors.name}</span>}
-
-            <input
-              name="phone"
-              value={formData.phone}
-              placeholder="📱 Phone Number"
-              onChange={handleChange}
-              className="cute-input"
-            />
-            {errors.phone && <span>{errors.phone}</span>}
-
-            <input
-              name="email"
-              value={formData.email}
-              placeholder="📧 Email"
-              onChange={handleChange}
-              className="cute-input"
-            />
-            {errors.email && <span>{errors.email}</span>}
-
-            <select
-              name="admission"
-              value={formData.admission}
-              onChange={handleChange}
-              className="cute-input"
-            >
-              <option value="">🎓 Select Program</option>
-              <option>Nursery</option>
-              <option>LKG</option>
-              <option>UKG</option>
-              <option>Day Care</option>
-            </select>
-            {errors.admission && <span>{errors.admission}</span>}
-
-            <button className="cute-btn">🚀 Submit</button>
-          </form>
-        </div>
-      </Modal>
-<FooterSocial/>
+  </div>
+</Modal>
+      <FooterSocial />
     </div>
   );
 };
