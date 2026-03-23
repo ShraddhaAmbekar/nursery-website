@@ -2,16 +2,17 @@
 
 import { useState } from "react";
 import "./Gallery.css";
+import aboutTitle from "../assets/about-title.jpg";
 
 const images = [
-  "https://tse1.mm.bing.net/th/id/OIP.yXvflNd8eN_KD_8D2Xo1GgHaE8?pid=Api",
-  "https://tse1.mm.bing.net/th/id/OIP.yXvflNd8eN_KD_8D2Xo1GgHaE8?pid=Api",
-  "https://tse1.mm.bing.net/th/id/OIP.yXvflNd8eN_KD_8D2Xo1GgHaE8?pid=Api",
-  "https://tse1.mm.bing.net/th/id/OIP.yXvflNd8eN_KD_8D2Xo1GgHaE8?pid=Api",
-  "https://tse1.mm.bing.net/th/id/OIP.yXvflNd8eN_KD_8D2Xo1GgHaE8?pid=Api",
-  "https://tse1.mm.bing.net/th/id/OIP.yXvflNd8eN_KD_8D2Xo1GgHaE8?pid=Api",
-  "https://tse1.mm.bing.net/th/id/OIP.yXvflNd8eN_KD_8D2Xo1GgHaE8?pid=Api",
-  "/images/g8.jpg",
+"/images/Gallery-01.webp",
+"/images/Gallery-02.webp",
+"/images/Gallery-03.webp",
+"/images/Gallery-04.webp",
+"/images/Gallery-05.webp",
+"/images/Gallery-06.webp",
+"/images/Gallery-07.webp",
+"/images/Gallery-08.webp",
 ];
 
 const Gallery = () => {
@@ -20,10 +21,26 @@ const Gallery = () => {
   return (
     <div className="gallery-page">
 
-      <h1 className="gallery-heading">Our Gallery</h1>
-      <p className="gallery-text">
-        Beautiful moments from our school
-      </p>
+         <div className="page-content">
+              <div className="dlab-bnr-inr" style={{
+                backgroundImage: `url(${aboutTitle})`,
+                backgroundSize: "cover",
+                backgroundPosition: "center"
+              }}>
+                <div className="container"><div className="dlab-bnr-inr-entry">
+                <h1 className="text-white">Gallery</h1>
+                <div className="breadcrumb-row">
+                  <ul className="list-inline">
+                    <li className="me-2">
+                      <a href="/" data-discover="true"><i className="fa fa-home"></i> </a>
+                    </li>
+                    <li className="me-2">Home &gt;</li>
+                    <li>Gallery</li></ul></div>
+              </div>
+      
+                </div>
+      
+              </div></div>
 
       <div className="gallery-grid">
         {images.map((img, i) => (

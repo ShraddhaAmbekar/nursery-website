@@ -13,9 +13,20 @@ const LowerKg = () => {
           backgroundImage: `url(${aboutTitle})`,
           backgroundSize: "cover",
           backgroundPosition: "center"
-        }}><div className="container"><div className="dlab-bnr-inr-entry"><h1 className="text-white">Program</h1>
-        </div>
-          </div>
+        }}>
+          <div className="container"><div className="dlab-bnr-inr-entry">
+                <h1 className="text-white">Programs</h1>
+                <div className="breadcrumb-row">
+                  <ul className="list-inline">
+                    <li className="me-2">
+                      <a href="/" data-discover="true"><i className="fa fa-home"></i> </a>
+                    </li>
+                    <li className="me-2">Home &gt;</li>
+                    <li>Programs  &gt;</li> 
+                    <li>Lower Kindergarten (LKG)</li></ul></div>
+              </div>
+      
+                </div>
         </div>
 
         <div className="section-full bg-white content-inner-1 about-kids" style={{

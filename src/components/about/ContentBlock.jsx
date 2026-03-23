@@ -18,8 +18,8 @@ const ContentBlock = () => {
               <li className="me-2">
                 <a href="/" data-discover="true"><i className="fa fa-home"></i> </a>
               </li>
-              <li className="me-2">Home</li>
-              <li>About Us 1</li></ul></div>
+              <li className="me-2">Home &gt; </li>
+              <li>About Us</li></ul></div>
         </div>
 
           </div>
