@@ -19,6 +19,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import FooterSocial from "./components/FoterIcons";
 
 import PopupModal from "./components/PopupModal";
+import Gallery from "./components/Gallery";
 
 const App = () => {
   return (
@@ -36,6 +37,7 @@ const App = () => {
         <Route path="/programs/lkg" element={<LowerKg />} />
         <Route path="/programs/ukg" element={<UpperKg />} />
         <Route path="/programs/day-care" element={<DayCare />} />
+        <Route path="/gallery" element={<Gallery />} />
       </Routes>
 
       <Footer />
