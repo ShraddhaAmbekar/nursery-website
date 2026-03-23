@@ -77,7 +77,7 @@ const GallerySection = () => {
                   </div>
 
                   <img
-                    src="https://umang-react.vercel.app/assets/pic2-BtQTdJ8y.jpg"
+                    src="/images/Gallery-01.webp"
                     alt="gallery"
                   />
                 </div>
@@ -97,7 +97,7 @@ const GallerySection = () => {
                   </div>
 
                   <img
-                    src="https://umang-react.vercel.app/assets/pic2-BtQTdJ8y.jpg"
+                    src="/images/Gallery-08.webp"
                     alt="gallery"
                   />
                 </div>
@@ -117,7 +117,7 @@ const GallerySection = () => {
                   </div>
 
                   <img
-                    src="https://umang-react.vercel.app/assets/pic2-BtQTdJ8y.jpg"
+                    src="/images/Gallery-04.webp"
                     alt="gallery"
                   />
                 </div>

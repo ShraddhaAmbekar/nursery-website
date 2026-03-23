@@ -1,7 +1,7 @@
 
 import aboutTitle from "../../assets/about-title.jpg";
 import aboutbg1 from "../../assets/about-bg1.png"
-import about1 from "../../assets/about1-img.jpg"
+import about1 from "../../assets/about.png"
 
 
 const ContentBlock = () => {

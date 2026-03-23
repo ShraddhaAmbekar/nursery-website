@@ -11,7 +11,6 @@ const images = [
 "/images/Gallery-04.webp",
 "/images/Gallery-05.webp",
 "/images/Gallery-06.webp",
-"/images/Gallery-07.webp",
 "/images/Gallery-08.webp",
 ];
 
