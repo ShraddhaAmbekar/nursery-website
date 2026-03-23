@@ -6,6 +6,7 @@ import Section3 from "./Section3";
 import GallerySection from "./GallerySection";
 import StaffSection from "./Staff";
 import Blog from "./Blog";
+import PopupModal from "../PopupModal";
 
 const Home = () => {
   return (
