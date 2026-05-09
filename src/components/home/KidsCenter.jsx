@@ -20,7 +20,7 @@ const KidsCenter = () => {
                     <div className="icon-bx-wraper sr-iconbox m-b20">
                       <div className="icon-lg m-b20">
                         <a className="icon-cell" href="/">
-                          <img src="/images/explore.png" alt="Creative Thinking" />
+                          <img src="/images/explore-r.webp" alt="Creative Thinking" />
                         </a>
                       </div>
                       <div className="icon-content">
@@ -35,7 +35,7 @@ const KidsCenter = () => {
                     <div className="icon-bx-wraper sr-iconbox m-b20">
                       <div className="icon-lg m-b20">
                         <a className="icon-cell" href="/">
-                          <img src="/images/imagine.png" alt="Emotions" />
+                          <img src="/images/imagine-r.webp" alt="Emotions" />
                         </a>
                       </div>
                       <div className="icon-content">
@@ -50,7 +50,7 @@ const KidsCenter = () => {
                     <div className="icon-bx-wraper sr-iconbox m-b20">
                       <div className="icon-lg m-b20">
                         <a className="icon-cell" href="/">
-                          <img src="/images/think.png" alt="Independent" />
+                          <img src="/images/think-r.webp" alt="Independent" />
                         </a>
                       </div>
                       <div className="icon-content">
@@ -65,7 +65,7 @@ const KidsCenter = () => {
                     <div className="icon-bx-wraper sr-iconbox m-b20">
                       <div className="icon-lg m-b20">
                         <a className="icon-cell" href="/">
-                          <img src="/images/learn.png" alt="Knowledge" />
+                          <img src="/images/learn-r.webp" alt="Knowledge" />
                         </a>
                       </div>
                       <div className="icon-content">
