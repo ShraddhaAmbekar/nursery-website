@@ -2,7 +2,7 @@ import React from 'react'
 import divider1 from '../../assets/line-divider.png'
 import divider2 from '../../assets/line-divider2.png'
 import joinus from '../../assets/joinus.webp'
-import { Link } from 'react-router'
+import { Link } from 'react-router-dom'
 
 const Joinus = () => {
   return (
