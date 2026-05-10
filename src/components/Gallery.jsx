@@ -3,6 +3,7 @@
 import { useState } from "react";
 import "./Gallery.css";
 import aboutTitle from "../assets/about-title.jpg";
+import { Link } from "react-router";
 
 const images = [
 "/images/Gallery-01-r.webp",

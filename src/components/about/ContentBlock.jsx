@@ -2,6 +2,7 @@
 import aboutTitle from "../../assets/about-title.jpg";
 import aboutbg1 from "../../assets/about-bg1.png"
 import about1 from "../../assets/about.png"
+import { Link } from "react-router-dom";
 
 
 const ContentBlock = () => {
