@@ -72,13 +72,12 @@ useEffect(() => {
   };
 
   return (
-    <Modal
-      isOpen={showModal}
-      onRequestClose={() => setShowModal(false)}
-      className="custom-modal"
-      overlayClassName="custom-overlay"
-      preventScroll={false}
-    >
+ <Modal
+  isOpen={showModal}
+  onRequestClose={() => setShowModal(false)}
+  className="custom-modal"
+  overlayClassName="custom-overlay"
+>
       <div className="modal-content-wrapper">
 
         <button

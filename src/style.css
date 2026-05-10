@@ -26,7 +26,7 @@
   font-weight: 700;
   font-size: 16px;
   color: var(--light-text) !important;
-  transition: var(--primary)
+  transition: all 0.3s ease;
 }
 
 .link:hover {
@@ -98,4 +98,86 @@
 }
 
 
+/* Nav Links */
+.navbar-nav .nav-link {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 15px 15px;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  color: var(--dark-gray);
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--primary);
+}
+
+/* Dropdown */
+.custom-program-dropdown .dropdown-menu {
+  background-color: var(--light-bg);
+  border: 3px solid var(--secondary);
+  border-radius: 0 20px 20px 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  padding: 10px 5px;
+  min-width: 250px;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+}
+
+.custom-program-dropdown .dropdown-item {
+  font-weight: 500;
+  font-size: 14px;
+  padding: 10px 22px;
+  transition: 0.3s;
+}
+
+.custom-program-dropdown .dropdown-item:hover {
+  font-weight: bold;
+
+}
+
+/* Remove toggle border */
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+/* ==========================================
+   MOBILE RESPONSIVE (FIXED)
+========================================== */
+@media (max-width: 991px) {
+
+  .navbar-nav {
+    background: var(--light);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 15px;
+  }
+
+  .navbar-nav .nav-link {
+    padding: 12px 0;
+  }
+
+  .nav-btn {
+    margin-top: 15px;
+    margin-left: 0;
+    display: inline-block;
+  }
+
+  /* Fix dropdown inside mobile */
+  .custom-program-dropdown .dropdown-menu {
+    position: static;
+    box-shadow: none;
+    border: none;
+    margin-top: 5px;
+    padding-left: 10px;
+  }
+
+  .navbar-collapse {
+    transition: all 0.3s ease;
+  }
+}
 
