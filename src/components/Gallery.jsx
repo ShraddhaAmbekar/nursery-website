@@ -5,13 +5,13 @@ import "./Gallery.css";
 import aboutTitle from "../assets/about-title.jpg";
 
 const images = [
-"/images/Gallery-01.webp",
-"/images/Gallery-02.webp",
-"/images/Gallery-03.webp",
-"/images/Gallery-04.webp",
-"/images/Gallery-05.webp",
-"/images/Gallery-06.webp",
-"/images/Gallery-08.webp",
+"/images/Gallery-01-r.webp",
+"/images/Gallery-02-r.webp",
+"/images/Gallery-03-r.webp",
+"/images/Gallery-04-r.webp",
+"/images/Gallery-05-r.webp",
+"/images/Gallery-06-r.webp",
+"/images/Gallery-08-r.webp",
 ];
 
 const Gallery = () => {

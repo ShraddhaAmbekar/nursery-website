@@ -77,7 +77,7 @@ const GallerySection = () => {
                   </div>
 
                   <img
-                    src="/images/Gallery-01.webp"
+                    src="/images/Gallery-01-r.webp"
                     alt="gallery"
                   />
                 </div>
@@ -97,7 +97,7 @@ const GallerySection = () => {
                   </div>
 
                   <img
-                    src="/images/Gallery-08.webp"
+                    src="/images/Gallery-08-r.webp"
                     alt="gallery"
                   />
                 </div>
@@ -117,7 +117,7 @@ const GallerySection = () => {
                   </div>
 
                   <img
-                    src="/images/Gallery-04.webp"
+                    src="/images/Gallery-04-r.webp"
                     alt="gallery"
                   />
                 </div>

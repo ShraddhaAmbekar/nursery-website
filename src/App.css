@@ -133,7 +133,7 @@ min-height: 80vh;
  }
 
 .slide1 {
-  background-image: url("/images/heromob3.jpeg");
+  background-image: url("/images/heromob3-r.webp");
    background-size: cover;
     background-position: center bottom;
   background-repeat: no-repeat;
@@ -141,14 +141,14 @@ min-height: 80vh;
 }
 
 .slide2 {
-  background-image: url("/images/heromob2.jpeg");
+  background-image: url("/images/heromob2-r.webp");
     background-size: cover;
    background-position: center bottom;
   background-repeat: no-repeat;
 }
 
 .slide3 {
-  background-image: url("/images/heromob4.jpeg");
+  background-image: url("/images/heromob4-r.webp");
     background-size: cover;
   background-position: center bottom;
   background-repeat: no-repeat;
