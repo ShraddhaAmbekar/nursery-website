@@ -16,7 +16,7 @@ const ContentBlock = () => {
           <div className="breadcrumb-row">
             <ul className="list-inline">
               <li className="me-2">
-                <a href="/" data-discover="true"><i className="fa fa-home"></i> </a>
+                <Link to="/" data-discover="true"><i className="fa fa-home"></i> </Link>
               </li>
               <li className="me-2">Home &gt; </li>
               <li>About Us</li></ul></div>
@@ -45,15 +45,15 @@ const ContentBlock = () => {
               <div className="col-lg-4 col-md-6 col-sm-12">
                 <div className="icon-bx-wraper right m-b30 about-iconbx">
                   <div className="icon-bx-sm radius bg-pink">
-                    <a className="icon-cell" href="/about-2" data-discover="true"><i className="flaticon-bricks"></i></a> </div><div className="icon-content">
+                    <Link to="/about" className="icon-cell" data-discover="true"><i className="flaticon-bricks"></i></Link> </div><div className="icon-content">
                     <h5 className="dlab-tilte">Play-Based Learning</h5>
                     <p>Children learn best through play. Our activities encourage exploration, creativity, and problem-solving while making learning fun.</p>
                   </div>
                 </div>
                 <div className="icon-bx-wraper right m-b30 about-iconbx">
                   <div className="icon-bx-sm radius bg-blue">
-                    <a className="icon-cell" href="/about-2" data-discover="true">
-                      <i className="flaticon-boy"></i></a>
+                    <Link to="/about" className="icon-cell" data-discover="true">
+                      <i className="flaticon-boy"></i></Link>
                   </div>
                   <div className="icon-content">
                     <h5 className="dlab-tilte">Caring & Experienced Educators</h5><p>Our dedicated teachers provide a nurturing environment where every child receives guidance, encouragement, and personal attention.</p>
@@ -66,15 +66,17 @@ const ContentBlock = () => {
               <div className="col-lg-4 col-md-6 col-sm-12">
                 <div className="icon-bx-wraper left m-b30 about-iconbx">
                   <div className="icon-bx-sm bg-green radius">
-                    <a className="icon-cell" href="/about-2" data-discover="true">
-                      <i className="flaticon-bus"></i></a> </div>
+                    <Link to="/about" className="icon-cell" data-discover="true">
+                      <i className="flaticon-bus"></i></Link> </div>
                   <div className="icon-content"><h5 className="dlab-tilte">Safe & Nurturing Environment</h5>
                     <p>We provide a secure and welcoming space where children feel comfortable learning, exploring, and expressing themselves.</p>
                   </div>
                 </div>
                 <div className="icon-bx-wraper left m-b30 about-iconbx">
                   <div className="icon-bx-sm bg-orange radius">
-                    <a className="icon-cell" href="/about-2" data-discover="true"><i className="flaticon-ice-cream"></i></a>
+                    <Link to="/about" className="icon-cell" data-discover="true" aria-label="Learn about holistic child development">
+                      <i className="flaticon-ice-cream"></i>
+                    </Link>
                   </div>
                   <div className="icon-content"><h5 className="dlab-tilte">Holistic Child Development</h5>
                     <p>Our programs support emotional, social, cognitive, and creative growth to build strong foundations for lifelong learning.</p>

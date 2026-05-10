@@ -5,6 +5,7 @@ import Parallex from "../about/Parallex";
 import Staff from "../home/Staff";
 import Joinus from "../about/Joinus";
 import Program from "../about/Program";
+import { Link } from "react-router";
 
 
 const Nursery = () => {
@@ -21,7 +22,7 @@ const Nursery = () => {
                 <div className="breadcrumb-row">
                   <ul className="list-inline">
                     <li className="me-2">
-                      <a href="/" data-discover="true"><i className="fa fa-home"></i> </a>
+                      <Link to="/" data-discover="true"><i className="fa fa-home"></i> </Link>
                     </li>
                     <li className="me-2">Home &gt;</li>
                     <li>Programs  &gt;</li> 
@@ -50,7 +51,7 @@ const Nursery = () => {
               <div className="col-lg-4 col-md-6 col-sm-12">
                 <div className="icon-bx-wraper right m-b30 about-iconbx">
                   <div className="icon-bx-sm radius bg-pink">
-                    <a className="icon-cell" href="/about-2" data-discover="true"><i className="flaticon-bricks"></i></a> </div><div className="icon-content">
+                    <Link to="/about" className="icon-cell" data-discover="true"><i className="flaticon-bricks"></i></Link> </div><div className="icon-content">
                     <h5 className="dlab-tilte">Language Exploration</h5>
                     <p>Children begin recognizing sounds, words, and simple expressions through rhymes and storytelling.</p>
                   </div>
@@ -72,15 +73,15 @@ const Nursery = () => {
               <div className="col-lg-4 col-md-6 col-sm-12">
                 <div className="icon-bx-wraper left m-b30 about-iconbx">
                   <div className="icon-bx-sm bg-green radius">
-                    <a className="icon-cell" href="/about-2" data-discover="true">
-                      <i className="flaticon-bus"></i></a> </div>
+                    <Link to="/about" className="icon-cell" data-discover="true">
+                      <i className="flaticon-bus"></i></Link> </div>
                   <div className="icon-content"><h5 className="dlab-tilte">Movement & Coordination</h5>
                     <p>Fun physical activities help develop balance, coordination, and motor skills.</p>
                   </div>
                 </div>
                 <div className="icon-bx-wraper left m-b30 about-iconbx">
                   <div className="icon-bx-sm bg-orange radius">
-                    <a className="icon-cell" href="/about-2" data-discover="true"><i className="flaticon-ice-cream"></i></a>
+                    <Link to="/about" className="icon-cell" data-discover="true"><i className="flaticon-ice-cream"></i></Link>
                   </div>
                   <div className="icon-content"><h5 className="dlab-tilte">Imaginative Play</h5>
                     <p>Pretend play and creative storytelling help children explore ideas and emotions.</p>

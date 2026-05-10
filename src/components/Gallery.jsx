@@ -31,7 +31,7 @@ const Gallery = () => {
                 <div className="breadcrumb-row">
                   <ul className="list-inline">
                     <li className="me-2">
-                      <a href="/" data-discover="true"><i className="fa fa-home"></i> </a>
+                      <Link to="/" data-discover="true"><i className="fa fa-home"></i> </Link>
                     </li>
                     <li className="me-2">Home &gt;</li>
                     <li>Gallery</li></ul></div>

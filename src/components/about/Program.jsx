@@ -61,7 +61,9 @@ const Program = () => {
                     <p className="post-text">
                       Where curiosity begins through play and discovery
                     </p>
-                    <a href="#" className="btn-link">Read more</a>
+                    <Link to="/programs/lkg" className="btn-link" aria-label="Learn more about the playgroup program">
+                      Read more
+                    </Link>
                   </div>
                 </div>
               </SwiperSlide>
@@ -82,7 +84,9 @@ const Program = () => {
                     <p className="post-text">
                       Building confidence, creativity, and early academic skills.
                     </p>
-                    <a href="#" className="btn-link">Read more</a>
+                    <Link to="/programs/ukg" className="btn-link" aria-label="Learn more about the kindergarten program">
+                      Read more
+                    </Link>
                   </div>
                 </div>
               </SwiperSlide>
@@ -103,7 +107,9 @@ const Program = () => {
                     <p className="post-text">
                       A safe and loving environment for children while parents are at work.
                     </p>
-                    <a href="#" className="btn-link">Read more</a>
+                    <Link to="/programs/daycare" className="btn-link" aria-label="Learn more about the day care program">
+                      Read more
+                    </Link>
                   </div>
                 </div>
               </SwiperSlide>
@@ -124,7 +130,9 @@ const Program = () => {
                     <p className="post-text">
                       Nurturing independence and joyful learning.
                     </p>
-                    <a href="#" className="btn-link">Read more</a>
+                    <Link to="/programs/nursery" className="btn-link" aria-label="Learn more about the nursery program">
+                      Read more
+                    </Link>
                   </div>
                 </div>
               </SwiperSlide>

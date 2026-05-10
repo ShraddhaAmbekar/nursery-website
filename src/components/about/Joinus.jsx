@@ -17,7 +17,8 @@ const Joinus = () => {
           <div className="section-head text-center">  
             <h4 className="text-white">Admission open 2026-2027</h4>
             <h2 className='section-h2'>Call To Enroll Today <br />
-              <span className="text-yellow"></span></h2><Link className="btn btn-md radius-xl main-btn" to="/contact" data-discover="true"> Read More
+              <span className="text-yellow"></span></h2><Link className="btn btn-md radius-xl main-btn" to="/contact" data-discover="true" aria-label="Learn more about enrollment">
+              Read More
               </Link></div>
           </div>
         </div></div>

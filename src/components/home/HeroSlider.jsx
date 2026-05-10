@@ -7,6 +7,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/effect-fade";
+import { Link } from "react-router";
 
 const HeroSlider = () => {
   return (
@@ -40,9 +41,9 @@ const HeroSlider = () => {
                 </p>
 
                 <div className="hero-buttons">
-                  <a href="/contact" className="button-join">
+                  <Link to="/contact" className="button-join">
                     Enquire Now
-                  </a>
+                  </Link>
                 </div>
               </div>
 
@@ -66,9 +67,9 @@ const HeroSlider = () => {
                 </p>
 
                 <div className="hero-buttons">
-                  <a href="/contact" className="button-join">
+                  <Link to="/contact" className="button-join">
                     Enquire Now
-                  </a>
+                  </Link>
                 </div>
               </div>
 
@@ -92,9 +93,9 @@ const HeroSlider = () => {
                 </p>
 
                 <div className="hero-buttons">
-                  <a href="/contact" className="button-join">
+                  <Link to="/contact" className="button-join">
                     Enquire Now
-                  </a>
+                  </Link>
                 </div>
               </div>
 
