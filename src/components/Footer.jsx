@@ -1,3 +1,4 @@
+import { Link } from 'react-router';
 import divider1 from '../assets/line-divider.png' 
 import logo from '../assets/logo.png'
 import {FaFacebook, FaInstagramSquare, FaLinkedin} from "react-icons/fa";
@@ -30,10 +31,10 @@ const Footer = () => {
           <h5>INFORMATION</h5>
         <div className="d-flex ">
             <ul>
-            <li><a href="/">HOME</a></li>
-            <li><a href="/">ABOUT</a></li><li>
-              <a href="/">PROGRAM</a></li>
-              <li><a href="/">CONTACT</a></li>
+            <li><Link to="/">HOME</Link></li>
+            <li><Link to="/about">ABOUT</Link></li><li>
+              <Link to="/programs/nursery">PROGRAM</Link></li>
+              <li><Link to="/contact">CONTACT</Link></li>
             
         
             
