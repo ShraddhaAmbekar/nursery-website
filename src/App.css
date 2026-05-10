@@ -19,9 +19,18 @@
 
 * {
   box-sizing: border-box;
-
+  min-width: 0 !important;
+   overflow-x: hidden;
 }
 
+.ReactModalPortal {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.ReactModal__Overlay {
+  overflow-x: hidden !important;
+}
 
 html,
 body {
@@ -660,11 +669,13 @@ body {
 }
 
 .swiper {
+  overflow-x: hidden;
   width: 100%;
   touch-action: pan-y;
 }
 
 .swiper-slide {
+  overflow-x: hidden;
   height: auto !important;
 }
 
@@ -674,7 +685,7 @@ body {
 }
 
 .swiper-wrapper {
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .slider-container {
@@ -723,7 +734,7 @@ body {
 /* Left arrow (centered area) */
 .sprite-arrow.prev {
   left: 50%;
-  transform: translateX(-60px);
+  transform: translateX(0px);
   background-position: -53px 0;
 }
 
