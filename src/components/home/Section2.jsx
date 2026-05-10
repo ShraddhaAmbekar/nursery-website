@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router'
 
 const Dream = () => {
   return (
@@ -20,7 +21,7 @@ const Dream = () => {
                 Our goal is to create a safe, joyful, and inspiring environment where every child feels valued, supported, and encouraged to reach their fullest potential.
               </p>
 
-              <a href="/faqs" className="button-join">Learn more</a>
+              <Link to="/about" className="button-join">Learn more</Link>
             </div>
 
             <div className=" col-lg-5 col-md-12 col-sm-12 col-12 right-content">

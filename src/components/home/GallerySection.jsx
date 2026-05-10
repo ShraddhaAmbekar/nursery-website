@@ -2,6 +2,7 @@ import { Container } from "react-bootstrap";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
 import { useRef } from "react";
+import { Link } from "react-router-dom";
 
 import "swiper/css";
 
@@ -76,10 +77,10 @@ const GallerySection = () => {
                     <i className="fa fa-search"></i>
                   </div>
 
-                  <img
+                 <Link to="/gallery"><img
                     src="/images/Gallery-01-r.webp"
                     alt="gallery"
-                  />
+                  /></Link> 
                 </div>
               </div>
             </SwiperSlide>
@@ -96,10 +97,10 @@ const GallerySection = () => {
                     <i className="fa fa-search"></i>
                   </div>
 
-                  <img
+                 <Link to="/gallery"> <img
                     src="/images/Gallery-08-r.webp"
                     alt="gallery"
-                  />
+                  /></Link>
                 </div>
               </div>
             </SwiperSlide>
@@ -112,14 +113,14 @@ const GallerySection = () => {
                     backgroundSize: "contain",
                   }}
                 >
-                  <div className="overlay">
+                 L <div className="overlay">
                     <i className="fa fa-search"></i>
                   </div>
 
-                  <img
+                 <Link to="/gallery"> <img
                     src="/images/Gallery-04-r.webp"
                     alt="gallery"
-                  />
+                  /></Link>
                 </div>
               </div>
             </SwiperSlide>

@@ -1,26 +1,34 @@
-import Slider from "react-slick";
 import { Container } from "react-bootstrap";
 
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination, Navigation, EffectFade } from "swiper/modules";
+
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/effect-fade";
+
 const HeroSlider = () => {
-  const settings = {
-    dots: true,
-    arrows: true,
-    infinite: true,
-    autoplay: true,
-    speed: 1200,
-    fade: true,
-    autoplaySpeed: 5000,
-  };
-
-
   return (
-    <section className="hero-section  position-relative">
-      <Slider {...settings} className="hero-slider">
-
-        <div className="hero-slide slide1" >
+    <section className="hero-section position-relative">
+      <Swiper
+        modules={[Autoplay, Pagination, Navigation, EffectFade]}
+        slidesPerView={1}
+        loop={true}
+        speed={1200}
+        effect="fade"
+        autoplay={{
+          delay: 5000,
+          disableOnInteraction: false,
+        }}
+        pagination={{ clickable: true }}
+        navigation={true}
+        className="hero-slider"
+      >
+        {/* Slide 1 */}
+        <SwiperSlide className="hero-slide slide1">
           <Container>
             <div className="hero-wrapper">
-
               <div className="hero-left">
                 <h2>
                   Building Bright Futures
@@ -38,24 +46,15 @@ const HeroSlider = () => {
                 </div>
               </div>
 
-              <div className="hero-right">
-                {/* <img src={heroImg} alt="kids" /> */}
-              </div>
-
+              <div className="hero-right"></div>
             </div>
           </Container>
+        </SwiperSlide>
 
-          {/* Floating Shapes
-          <div className="shape shape-1"></div>
-          <div className="shape shape-2"></div>
-          <div className="shape shape-3"></div>
-          <div className="shape shape-4"></div> */}
-
-        </div>
-        <div className="hero-slide slide2" >
+        {/* Slide 2 */}
+        <SwiperSlide className="hero-slide slide2">
           <Container>
             <div className="hero-wrapper">
-
               <div className="hero-left">
                 <h2>
                   Building Bright Futures
@@ -73,23 +72,15 @@ const HeroSlider = () => {
                 </div>
               </div>
 
-              <div className="hero-right">
-                {/* <img src={heroImg} alt="kids" /> */}
-              </div>
-
+              <div className="hero-right"></div>
             </div>
           </Container>
+        </SwiperSlide>
 
-          {/* Floating Shapes
-          <div className="shape shape-1"></div>
-          <div className="shape shape-2"></div>
-          <div className="shape shape-3"></div>
-          <div className="shape shape-4"></div> */}
-
-        </div>  <div className="hero-slide slide3" >
+        {/* Slide 3 */}
+        <SwiperSlide className="hero-slide slide3">
           <Container>
             <div className="hero-wrapper">
-
               <div className="hero-left">
                 <h2>
                   Building Bright Futures
@@ -107,26 +98,14 @@ const HeroSlider = () => {
                 </div>
               </div>
 
-              <div className="hero-right">
-                {/* <img src={heroImg} alt="kids" /> */}
-              </div>
-
+              <div className="hero-right"></div>
             </div>
           </Container>
+        </SwiperSlide>
+        
 
-          {/* Floating Shapes
-          <div className="shape shape-1"></div>
-          <div className="shape shape-2"></div>
-          <div className="shape shape-3"></div>
-          <div className="shape shape-4"></div> */}
-
-        </div>
-
-
-
-
-
-      </Slider>
+        
+      </Swiper>
     </section>
   );
 };

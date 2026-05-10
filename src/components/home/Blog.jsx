@@ -5,6 +5,7 @@ import { Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import imageFrame from "../../assets/image-frame.png"
+import { Link } from 'react-router';
 
 const Blog = () => {
 
@@ -58,7 +59,7 @@ const Blog = () => {
                     <p className="post-text">
                       Where curiosity begins through play and discovery
                     </p>
-                    <a href="#" className="btn-link">Read more</a>
+                    <Link to="/programs/lkg" className="btn-link">Read more</Link>
                   </div>
                 </div>
               </SwiperSlide>
@@ -79,7 +80,7 @@ const Blog = () => {
                     <p className="post-text">
                       Building confidence, creativity, and early academic skills.
                     </p>
-                    <a href="#" className="btn-link">Read more</a>
+                    <Link to="/programs/ukg" className="btn-link">Read more</Link>
                   </div>
                 </div>
               </SwiperSlide>
@@ -100,7 +101,7 @@ const Blog = () => {
                     <p className="post-text">
                       A safe and loving environment for children while parents are at work.
                     </p>
-                    <a href="#" className="btn-link">Read more</a>
+                    <Link to="/programs/day-care" className="btn-link">Read more</Link>
                   </div>
                 </div>
               </SwiperSlide>
@@ -121,7 +122,7 @@ const Blog = () => {
                     <p className="post-text">
                       Nurturing independence and joyful learning.
                     </p>
-                    <a href="#" className="btn-link">Read more</a>
+                    <Link to="/programs/nursery" className="btn-link">Read more</Link>
                   </div>
                 </div>
               </SwiperSlide>
