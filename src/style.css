@@ -37,24 +37,21 @@
    NAVBAR (Like Umang)
 ================================ */
 
-
-
-
 .main-navbar.scrolled {
   padding: 12px 0;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
-
-
 
 .navbar-nav .nav-link {
   margin-left: 25px;
   font-size: 14px;
   padding: 30px 12px;
   font-weight: 600;
-  font-family: Poppins;
+    font-family: "Poppins", sans-serif;
   transition: all 0.3s ease;
+  color: var(--dark-gray);
 }
+
 
 .navbar-nav .nav-link:hover {
   color: var(--primary-text) !important;
@@ -73,7 +70,9 @@
     visibility: visible;
     border: 2px solid var(--secondary);
     margin-top: 10px;
-    box-shadow: none;
+    padding:20px 10px;
+    box-shadow: none;   
+
   }
 
 .custom-dropdown a {
@@ -95,22 +94,11 @@
 .custom-dropdown a:hover {
   color: var(--secondary);
   background: #f5f7ff;
+
 }
 
 
-/* Nav Links */
-.navbar-nav .nav-link {
-  font-size: 14px;
-  font-weight: 600;
-  padding: 15px 15px;
-  font-family: "Poppins", sans-serif;
-  position: relative;
-  color: var(--dark-gray);
-}
 
-.navbar-nav .nav-link:hover {
-  color: var(--primary);
-}
 
 /* Dropdown */
 .custom-program-dropdown .dropdown-menu {
