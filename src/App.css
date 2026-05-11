@@ -20,7 +20,6 @@
 * {
   box-sizing: border-box;
   min-width: 0 !important;
-   overflow-x: hidden;
 }
 
 .ReactModalPortal {
@@ -562,7 +561,7 @@ body {
 }
 
 .icon-content {
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .icon-bx-wraper .dlab-tilte {
@@ -691,7 +690,7 @@ body {
 .slider-container {
   width: 100%;
   max-width: 100%;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 /* Slider container */
@@ -779,7 +778,7 @@ body {
 
 .dlab-thum {
   position: relative;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .overlay-bx {
