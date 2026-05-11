@@ -5,11 +5,11 @@ const FooterSocial = () => {
     {
       icon: FaPhoneAlt,
       link: "tel:+919911255302",
-      color: "#25D366"
+     color: "#007bff"
     },
     {
       icon: FaWhatsapp,
-      link: "https://wa.me/1234567890",
+      link: "https://wa.me/+919911255302",
       color: "#25D366"
     }
   ];

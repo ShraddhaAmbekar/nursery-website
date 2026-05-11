@@ -19,18 +19,10 @@
 
 * {
   box-sizing: border-box;
-  min-width: 0 !important;
-   overflow-x: hidden;
+
 }
 
-.ReactModalPortal {
-  max-width: 100%;
-  overflow-x: hidden;
-}
 
-.ReactModal__Overlay {
-  overflow-x: hidden !important;
-}
 
 html,
 body {
@@ -622,6 +614,8 @@ body {
 
 .section-divider img {
   max-width: fit-content;
+    max-width: 100%;
+  overflow: hidden;
 }
 
 .cold-heading {
@@ -854,6 +848,37 @@ body {
   border-color: initial;
   border-image: initial;
   padding: 0px;
+}
+
+.floating-icons {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  z-index: 9999;
+}
+
+/* Button style */
+.icon-btn {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.icon-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
 /* footer */
