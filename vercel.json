@@ -1,8 +1,15 @@
 {
-  "rewrites": [
+  "redirects": [
     {
       "source": "/(.*)",
-      "destination": "/"
+      "has": [
+        {
+          "type": "host",
+          "value": "hummingkitez.in"
+        }
+      ],
+      "destination": "https://www.hummingkitez.in/$1",
+      "permanent": true
     }
   ]
 }
