@@ -613,7 +613,7 @@ body {
 }
 
 .section-divider img {
-  max-width: fit-content;
+ 
     max-width: 100%;
   overflow: hidden;
 }
@@ -1113,8 +1113,9 @@ body {
   .hero-buttons {
     justify-content: center;
   }
-
-}
+.section-divider img{
+height:50px
+}}
 
 /* Responsive */
 @media(max-width:768px) {

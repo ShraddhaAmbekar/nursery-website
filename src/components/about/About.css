@@ -160,7 +160,8 @@ padding:80px 20px;
         margin-bottom: 0;
 
     }
-
+.dlab-bnr-inr:after {
+    height: 70px;}
  
 }
 /* children box */
